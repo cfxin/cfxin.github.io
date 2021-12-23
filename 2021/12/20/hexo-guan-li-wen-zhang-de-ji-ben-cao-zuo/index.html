@@ -40,6 +40,16 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
 
 
 
+   <style>
+    body{
+       background-image: url(/medias/wallhaven.png);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -109,17 +119,6 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -216,17 +215,6 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
@@ -239,7 +227,7 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/cfxin" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -296,7 +284,7 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/cfxin" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -315,7 +303,7 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -445,6 +433,15 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" class="post-category">
+                                博客建设
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -457,12 +454,32 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-12-23
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.1k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    4 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -473,14 +490,14 @@ hexo n &#34;Hexo管理文章的基本操作&#34;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-创建md文件"><a href="#1-创建md文件" class="headerlink" title="1. 创建md文件"></a>1. 创建md文件</h1><p>Hexo 使用 Markdown 解析文章，md文件也就是Markdown文件，通过以下命令创建：</p>
-<pre class=" language-git"><code class="language-git">hexo n &lt;title>
+                <h2 id="1-创建md文件"><a href="#1-创建md文件" class="headerlink" title="1. 创建md文件"></a>1. 创建md文件</h2><p>Hexo 使用 Markdown 解析文章，md文件也就是Markdown文件，通过以下命令创建：</p>
+<pre class=" language-bash"><code class="language-bash">hexo n <span class="token operator">&lt;</span>title<span class="token operator">></span>
 <span class="token comment" spellcheck="true"># 例如</span>
 hexo n <span class="token string">"Hexo管理文章的基本操作"</span>
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220111012.png"></p>
 <p>这里可以看到创建了一个Hexo管理文章的基本操作.md，保存在<code>\source\_posts</code>文件夹下。打开该文件，使用Markdown语法即可书写文章内容。</p>
-<h1 id="2-三种布局"><a href="#2-三种布局" class="headerlink" title="2. 三种布局"></a>2. 三种布局</h1><p>创建md文件时，我们可以指定布局，Hexo布局有三种：post（文章）、draft（草稿）、page（页面）。</p>
+<h2 id="2-三种布局"><a href="#2-三种布局" class="headerlink" title="2. 三种布局"></a>2. 三种布局</h2><p>创建md文件时，我们可以指定布局，Hexo布局有三种：post（文章）、draft（草稿）、page（页面）。</p>
 <p>&nbsp;<br>在新建文件时，Hexo 会根据 <code>scaffolds</code> 文件夹内相对应的文件（可以理解为模板）来建立md文件：</p>
 <ul>
 <li>如果没有指定布局类型，则为默认布局post，即<code>hexo n = hexo n post</code>。</li>
@@ -497,12 +514,12 @@ hexo n <span class="token string">"Hexo管理文章的基本操作"</span>
 <li>可以通过 publish 命令将草稿发布文章或者页面，它将会被移动到指定的文件夹。<code>hexo publish [layout] &lt;title&gt;</code></li>
 </ul>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220131544.png"></p>
-<h1 id="3-Front-matter"><a href="#3-Front-matter" class="headerlink" title="3. Front-matter"></a>3. Front-matter</h1><p>当我们创建一个md文件后，打开后会看到一些内容，这些称为Front-matter，它是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<pre><code>---
-title: Hexo管理文章的基本操作 # 文章标题，也就是创建时指定的名字
-date: 2021-12-20 11:06:18 # 创建时间
-tags: # 标签
----
+<h2 id="3-Front-matter"><a href="#3-Front-matter" class="headerlink" title="3. Front-matter"></a>3. Front-matter</h2><p>当我们创建一个md文件后，打开后会看到一些内容，这些称为Front-matter，它是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Hexo管理文章的基本操作 <span class="token comment" spellcheck="true"># 文章标题，也就是创建时指定的名字</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2021-12-20 11:06:18 </span><span class="token comment" spellcheck="true"># 创建时间</span>
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 标签</span>
+<span class="token punctuation">---</span>
 </code></pre>
 <blockquote>
 <p>在Typora中我们在md文件的首行（必须是第一行）输入<code>---</code> ，然后按回车就可以插入Front-matter了。<br>注意：参数的<code>:</code>后面有一个空格。</p>
@@ -510,46 +527,64 @@ tags: # 标签
 <ul>
 <li><strong>Front-matter预定义参数</strong></li>
 </ul>
-<pre><code>---
-layout: 布局 # 默认为true, 如果你不想你的文章被处理, 可以设置为false
-title: 标题  # 标题会显示在最上方居中位置
-catalog:  # 是否显示段落目录
-date: 创建日期 # 如果不指定则为默认值-文件创建日期, 可以自定义。
-tags: 标签 # 不适用于page布局
-categoreies: 分类 # 不适用于page布局
-update: 更新日期 # 如果不指定则为默认值-文件修改后重新生成静态文件的日期。
-comments: ture # 是否开启文章的评论功能, 默认值为true
-subtitle:  # 子标题
-header-img:  # 顶部背景图片
-top:  # 是否置顶
-permalink:  # 覆盖文章网址
-keywords:  # 仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）
----
+<p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211223145713.png"></p>
+<blockquote>
+<p><strong>注意</strong>:</p>
+<ol>
+<li>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图<strong>各有特色</strong>。</li>
+<li><code>date</code> 的值尽量保证每篇文章是唯一的，因为本主题中 <code>Gitalk</code> 和 <code>Gitment</code> 识别 <code>id</code> 是通过 <code>date</code> 的值来作为唯一标识的。</li>
+<li>如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 <code>_config.yml</code> 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：<a target="_blank" rel="noopener" href="http://encode.chahuo.com/">chahuo</a>。</li>
+</ol>
+</blockquote>
+<p>最简示例：</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme主题介绍
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-07 09:25:00</span>
+<span class="token punctuation">---</span>
+</code></pre>
+<p>最全示例：</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Hexo管理文章的基本操作
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2021-12-20 14:33:20</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> cfxin
+<span class="token key atrule">img</span><span class="token punctuation">:</span> /source/images/xxx.jpg
+<span class="token key atrule">top</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">coverImg</span><span class="token punctuation">:</span> /medias/images/1.jpg
+<span class="token key atrule">password</span><span class="token punctuation">:</span> 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> 这是你自定义的文章摘要内容
+<span class="token key atrule">categories</span><span class="token punctuation">:</span> Markdown
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> Typora
+  <span class="token punctuation">-</span> Markdown
+<span class="token punctuation">---</span>
 </code></pre>
 <ul>
 <li><strong>添加分类与标签</strong><br>只有文章（post布局）支持分类和标签，需要在Front-matter中设置。分类有层级关系，标签没有。例如：</li>
 </ul>
-<pre><code>categories:
-- 个人博客 #（第一层级）
-- Hexo博客 #（第二层级）
-tags:
-- Hexo
-- 博客
+<pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">categories</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> 个人博客 <span class="token comment" spellcheck="true">#（第一层级）</span>
+<span class="token punctuation">-</span> Hexo博客 <span class="token comment" spellcheck="true">#（第二层级）</span>
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> Hexo
+<span class="token punctuation">-</span> 博客
 </code></pre>
 <p>添加多个分类：</p>
-<pre><code>categories:
-- [日常, 生活]
-- [日常, 随想]
+<pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">categories</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token punctuation">[</span>日常<span class="token punctuation">,</span> 生活<span class="token punctuation">]</span>
+<span class="token punctuation">-</span> <span class="token punctuation">[</span>日常<span class="token punctuation">,</span> 随想<span class="token punctuation">]</span>
 </code></pre>
-<h1 id="4-基本操作"><a href="#4-基本操作" class="headerlink" title="4. 基本操作"></a>4. 基本操作</h1><ul>
+<h2 id="4-基本操作"><a href="#4-基本操作" class="headerlink" title="4. 基本操作"></a>4. 基本操作</h2><ul>
 <li>清除缓存：<code>hexo clean</code></li>
 <li>生成静态文件：<code>hexo generate</code>可简写为<code>hexo g</code></li>
 <li>启动服务器：<code>hexo server</code>简写为<code>hexo s</code>，常用参数：<code>-p</code>重设端口</li>
 <li>部署：<code>hexo deploy</code>简写为<code>hexo d</code>，用于将网站部署到服务器上。常用参数：-g，<code>hexo d -g</code>部署前预先生成静态文件。</li>
 </ul>
 <p>&nbsp;<br>一般发布文章或者修改博客后需要这些操作：清除缓存&gt;生成静态文件&gt;启动服务器，测试没问题后再部署。</p>
-<pre class=" language-git"><code class="language-git">hexo clean &amp;&amp; hexo s -g # 清除缓存>生成静态文件>启动服务器
-hexo d # 部署
+<pre class=" language-bash"><code class="language-bash">hexo clean <span class="token operator">&amp;&amp;</span> hexo s -g <span class="token comment" spellcheck="true"># 清除缓存>生成静态文件>启动服务器</span>
+hexo d <span class="token comment" spellcheck="true"># 部署</span>
 </code></pre>
 <blockquote>
 <p>更多操作查看：<a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/">Hexo官方文档</a></p>
@@ -630,7 +665,7 @@ hexo d # 部署
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="twitter,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
     
 
@@ -800,7 +835,7 @@ hexo d # 部署
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Hexo管理文章的基本操作">
+                        <img src="/medias/featureimages/10.png" class="responsive-img" alt="Hexo管理文章的基本操作">
                         
                         <span class="card-title">Hexo管理文章的基本操作</span>
                     </div>
@@ -817,8 +852,12 @@ hexo d # 部署
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            cfxin
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" class="post-category">
+                                    博客建设
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -842,13 +881,13 @@ hexo d # 部署
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/08/jie-gou-ti/">
+                <a href="/2021/12/20/typora-de-yi-xie-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C语言：结构体">
+                        <img src="/medias/featureimages/62.png" class="responsive-img" alt="Typora的一些配置">
                         
-                        <span class="card-title">C语言：结构体</span>
+                        <span class="card-title">Typora的一些配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -859,14 +898,14 @@ hexo d # 部署
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    编程语言
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
                                 </a>
                             
                             
@@ -876,8 +915,8 @@ hexo d # 部署
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                        <span class="chip bg-color">C语言</span>
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
                     </a>
                     
                 </div>
@@ -890,6 +929,43 @@ hexo d # 部署
 
 </div>
 
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('100')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 程不懂の博客<br />'
+            + '文章作者: cfxin<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
 
 
 <!-- 代码块功能依赖 -->
@@ -1009,63 +1085,16 @@ hexo d # 部署
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
     
 
     <div class="container row center-align"
@@ -1073,12 +1102,15 @@ hexo d # 部署
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
             <a href="/about" target="_blank">cfxin</a>
-            |&nbsp;博客框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">20.9k</span>
             
             
             
@@ -1104,44 +1136,61 @@ hexo d # 部署
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <!-- <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
+    <!-- <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
     <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/cheng-feng-xin-12" class="tooltipped" target="_blank" data-tooltip="关注我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
     </a>
 
 
-<!-- 
 
- -->
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
+    <a href="https://www.yuque.com/chengbudong" class="tooltipped" target="_blank" data-tooltip="关注我的语雀" data-position="top" data-delay="50">
+        <i class="fas fa-crow"></i>
     </a>
 
 
 
-
-
-
-
-
-<!-- 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
- -->
 </div>
     </div>
 </footer>
 
 <div class="progress-bar"></div>
+
+<!-- 不蒜子统计. -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 
     <!-- 搜索遮罩框 -->
@@ -1271,6 +1320,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -1310,6 +1367,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     

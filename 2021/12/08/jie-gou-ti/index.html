@@ -34,6 +34,16 @@
 
 
 
+   <style>
+    body{
+       background-image: url(/medias/wallhaven.png);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -103,17 +113,6 @@
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -210,17 +209,6 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
@@ -233,7 +221,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/cfxin" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -290,7 +278,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/cfxin" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -309,7 +297,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/chengbudong/noteimg/raw/master/image/p2623891164.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -460,12 +448,32 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-12-23
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    8 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -478,19 +486,19 @@
             <div id="articleContent">
                 <h2 id="什么是结构体"><a href="#什么是结构体" class="headerlink" title="什么是结构体"></a>什么是结构体</h2><p>结构体是一种构造类型，允许用户自定义，用于保存一组不同类型的数据。例如，书籍信息，书的编号应为整型；书名应为字符型。显然这组数据不能用数组来存放, 为了解决这个问题，C语言中给出了一种构造数据类型——“结构(structure)”或叫“结构体”。</p>
 <h2 id="定义结构体类型"><a href="#定义结构体类型" class="headerlink" title="定义结构体类型"></a>定义结构体类型</h2><p>通过定义结构体类型来告诉编译器，我们的结构体中需要存储哪些类型的数据。</p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> 结构体名 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> 结构体名 <span class="token punctuation">{</span>
     类型名<span class="token number">1</span> 成员名<span class="token number">1</span><span class="token punctuation">;</span>
     类型名<span class="token number">2</span> 成员名<span class="token number">2</span><span class="token punctuation">;</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
     类型名n 成员名n<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <p>示例：</p>
 <pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span>  <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <blockquote>
 <p>注意不要丢掉末尾的分号</p>
@@ -505,24 +513,24 @@
 <ul>
 <li>定义结构体类型的同时定义变量</li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> book2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> book2<span class="token punctuation">;</span>
 </code></pre>
 <ul>
 <li>匿名结构体定义结构体变量 (这种方法可以省略结构体类型名，但不能复用)</li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> book3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> book3<span class="token punctuation">;</span>
 </code></pre>
 <h2 id="访问结构体成员"><a href="#访问结构体成员" class="headerlink" title="访问结构体成员"></a>访问结构体成员</h2><p>使用成员访问运算符<code>.</code>来访问结构体成员，形式为：<code>结构体变量名.成员名</code>。</p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token keyword">struct</span> Books book1<span class="token punctuation">;</span>
 boo1<span class="token punctuation">.</span>book_id <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">;</span>
 book1<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"C语言"</span><span class="token punctuation">;</span>
@@ -531,12 +539,12 @@ book1<span class="token punctuation">.</span>title <span class="token operator">
 <h2 id="结构体变量的初始化"><a href="#结构体变量的初始化" class="headerlink" title="结构体变量的初始化"></a>结构体变量的初始化</h2><ul>
 <li>定义的同时按顺序初始化</li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C语言"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C语言"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <ul>
 <li>定义的同时不按顺序初始化</li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book2 <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"C++"</span><span class="token punctuation">,</span> <span class="token punctuation">.</span>book_id <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"C++"</span><span class="token punctuation">,</span> <span class="token punctuation">.</span>book_id <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <ul>
 <li>先定义再逐个初始化</li>
@@ -549,7 +557,7 @@ book3<span class="token punctuation">.</span>title <span class="token operator">
 <li>先定义再一次性初始化</li>
 </ul>
 <pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book4<span class="token punctuation">;</span>
-book4 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">struct</span> Books<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">"Java"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+book4 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">struct</span> Books<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">"Java"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="结构体类型作用域"><a href="#结构体类型作用域" class="headerlink" title="结构体类型作用域"></a>结构体类型作用域</h2><ul>
 <li>结构体类型定义在函数内部的作用域与局部变量的作用域是相同的<ul>
@@ -561,17 +569,17 @@ book4 <span class="token operator">=</span> <span class="token punctuation">(</s
 </ul>
 </li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
-<span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C语言"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C语言"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">//定义一个同名的局部结构体，会屏蔽掉全局结构体</span>
-    <span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
         <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
         <span class="token keyword">char</span> <span class="token operator">*</span>author<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token keyword">struct</span> Books book1<span class="token punctuation">;</span>
     book1<span class="token punctuation">.</span>book_id <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// book1.title = "Python"; // 由于屏蔽掉了全局结构体，此处会报错</span>
@@ -579,11 +587,11 @@ book4 <span class="token operator">=</span> <span class="token punctuation">(</s
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> book1<span class="token punctuation">.</span>book_id<span class="token punctuation">,</span> book1<span class="token punctuation">.</span>author<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//局部结构体作用域到这结束</span>
-<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//局部结构体作用域到这结束</span>
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">//此处使用的是全局的结构体</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> book1<span class="token punctuation">.</span>book_id<span class="token punctuation">,</span> book1<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
 </code></pre>
 <h2 id="结构体数组"><a href="#结构体数组" class="headerlink" title="结构体数组"></a>结构体数组</h2><p>结构体数组与数据值型数组不同之处在于每个数组元素都一个结构体类型的数据，它们分别包括各个成员项。</p>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211219134658.png"></p>
@@ -593,7 +601,7 @@ book4 <span class="token operator">=</span> <span class="token punctuation">(</s
 <h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
 <li>定义的同时做初始化</li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"C++"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 初始化了前两个</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books book<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"C++"</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 初始化了前两个</span>
 </code></pre>
 <ul>
 <li>先定义在初始化</li>
@@ -608,19 +616,19 @@ book<span class="token punctuation">[</span><span class="token number">2</span><
 <li><code>(*结构体指针变量名).成员名</code></li>
 <li><code>结构体指针变量名-&gt;成员名</code></li>
 </ul>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
-<span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">struct</span> Books <span class="token operator">*</span>p<span class="token punctuation">;</span>
     p <span class="token operator">=</span> <span class="token operator">&amp;</span>book1<span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">.</span>book_id<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> p<span class="token operator">-></span>book_id<span class="token punctuation">,</span> p<span class="token operator">-></span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <blockquote>
 <p>(*结构体指针变量名)的 ( ) 不能省略，因为成员符<code>.</code>的优先级高于<code>*</code>。 </p>
@@ -628,22 +636,24 @@ book<span class="token punctuation">[</span><span class="token number">2</span><
 <h2 id="结构体内存分析"><a href="#结构体内存分析" class="headerlink" title="结构体内存分析"></a>结构体内存分析</h2><ul>
 <li>给结构体变量开辟存储空间和给普通开辟存储空间一样, 会从内存地址大的位置开始开辟</li>
 <li>给结构体成员开辟存储空间和给数组元素开辟存储空间一样, 会从所占用内存地址小的位置开始开辟</li>
-<li>结构体变量占用的内存空间是其最大成员的大小的倍数(对齐问题)<blockquote>
+<li>结构体变量占用的内存空间是其最大成员的大小的倍数(对齐问题)</li>
+</ul>
+<blockquote>
 <p>计算机系统对基本类型数据在内存中存放的位置有限制，它们会要求这些数据的起始地址的值是某个数 k 的倍数，这就是所谓的内存对齐，而这个 k 则被称为该数据类型的对齐模数(alignment modulus)。<br>对齐的优点：</p>
 <ul>
 <li>简化了处理器与内存之间传输系统的设计</li>
 <li>可以提升读取数据的速度。<br>比如：处理器每次读写内存的时候都从某个8倍数的地址开始，一次读出或写入8个字节的数据，假如软件能保证double类型的数据都从8倍数地址开始，那么读或写一个double类型数据就只需要一次内存操作。否则，我们就可能需要两次内存操作才能完成这个动作，因为数据或许恰好横跨在两个符合对齐要求的8字节内存块上。</li>
 </ul>
 </blockquote>
-</li>
-</ul>
 <h3 id="对齐规则"><a href="#对齐规则" class="headerlink" title="对齐规则"></a>对齐规则</h3><ol>
-<li><p>结构体变量的首地址能够被其最大基本类型成员的大小所整除。</p>
+<li>结构体变量的首地址能够被其最大基本类型成员的大小所整除。</li>
+</ol>
 <blockquote>
 <p><strong>备注</strong>：编译器在给结构体开辟空间时，首先找到结构体中最宽的基本数据类型，然后寻找内存地址能被该基本数据类型所整除的位置，作为结构体的首地址。将这个最宽的基本数据类型的大小作为上面介绍的对齐模数。</p>
 </blockquote>
-</li>
-<li><p>结构体每个成员相对于结构体首地址的偏移量是当前成员大小的整数倍。</p>
+<ol start="2">
+<li>结构体每个成员相对于结构体首地址的偏移量是当前成员大小的整数倍。</li>
+</ol>
 <blockquote>
 <p><strong>备注</strong>：为结构体的一个成员开辟空间之前，编译器首先检查预开辟空间的首地址相对于结构体首地址的偏移是否是该成员的整数倍，若是，则存放该成员，反之，则在该成员和上一个成员之间填充一定的字节，以达到整数倍的要求，也就是将预开辟空间的首地址后移几个字节。</p>
 <ul>
@@ -651,13 +661,12 @@ book<span class="token punctuation">[</span><span class="token number">2</span><
 <li>除了平台差异外，还有预编译指令<code>#pragma pack(n)</code>手动设置，n–只能填1 2 4 8 16</li>
 </ul>
 </blockquote>
-</li>
-<li><p>结构体的总大小为其最大基本类型成员大小的整数倍。</p>
+<ol start="3">
+<li>结构体的总大小为其最大基本类型成员大小的整数倍。</li>
+</ol>
 <blockquote>
 <p><strong>备注</strong>：结构体总大小是包括填充字节，最后一个成员满足上面两条以外，还必须满足第三条，否则就必须在最后填充几个字节以达到本条要求。</p>
 </blockquote>
-</li>
-</ol>
 <pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">// 基本数据类型大小, win 64位。</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// 1</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">short</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// 2</span>
@@ -666,61 +675,61 @@ book<span class="token punctuation">[</span><span class="token number">2</span><
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// 4</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 8</span>
 </code></pre>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str1 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>                                        
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str1 <span class="token punctuation">{</span>                                        
     <span class="token keyword">char</span> a<span class="token punctuation">;</span>    
     <span class="token keyword">char</span> b<span class="token punctuation">;</span>        
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>str1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>str1<span class="token punctuation">;</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span>Str1<span class="token punctuation">)</span>  <span class="token operator">=</span> <span class="token number">2</span>
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211207161618.png"></p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str2 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str2 <span class="token punctuation">{</span>
     <span class="token keyword">char</span> a<span class="token punctuation">;</span> 
     <span class="token keyword">char</span> b<span class="token punctuation">;</span> 
     <span class="token keyword">int</span>  c<span class="token punctuation">;</span> 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>str2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>str2<span class="token punctuation">;</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span>Str2<span class="token punctuation">)</span>  <span class="token operator">=</span> <span class="token number">8</span>
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/struct_size2.png"></p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str3 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str3 <span class="token punctuation">{</span>
     <span class="token keyword">char</span> a<span class="token punctuation">;</span>
     <span class="token keyword">int</span>  c<span class="token punctuation">;</span>
     <span class="token keyword">char</span> b<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>str3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>str3<span class="token punctuation">;</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span>Str3<span class="token punctuation">)</span>  <span class="token operator">=</span> <span class="token number">12</span>    
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/struct_size3.png"></p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str4 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Str4 <span class="token punctuation">{</span>
     <span class="token keyword">char</span> a<span class="token punctuation">;</span>
     <span class="token keyword">char</span> b<span class="token punctuation">;</span>
     <span class="token keyword">int</span>  c<span class="token punctuation">;</span>
     <span class="token keyword">double</span> d<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>str4<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>str4<span class="token punctuation">;</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span>Str4<span class="token punctuation">)</span>  <span class="token operator">=</span> <span class="token number">16</span>    
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/struct_size4.png"></p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> str5 <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> str5 <span class="token punctuation">{</span>
     <span class="token keyword">char</span> a<span class="token punctuation">;</span>
     <span class="token keyword">short</span> b<span class="token punctuation">;</span>
     <span class="token keyword">int</span> c<span class="token punctuation">;</span>
     <span class="token keyword">double</span> d<span class="token punctuation">;</span>
     <span class="token keyword">char</span> e<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>str5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>str5<span class="token punctuation">;</span>
 <span class="token keyword">sizeof</span><span class="token punctuation">(</span>Str4<span class="token punctuation">)</span>  <span class="token operator">=</span> <span class="token number">24</span> 
 </code></pre>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/struct_size5.png"></p>
 <h2 id="结构体嵌套定义"><a href="#结构体嵌套定义" class="headerlink" title="结构体嵌套定义"></a>结构体嵌套定义</h2><p>成员也可以又是一个结构，即构成了嵌套的结构 。</p>
 <p>例如：在Books中嵌套Date结构</p>
 <p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/struct_struct.png"></p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Date <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> Date <span class="token punctuation">{</span>
     <span class="token keyword">int</span> year<span class="token punctuation">;</span>
     <span class="token keyword">int</span> month<span class="token punctuation">;</span>
     <span class="token keyword">int</span> day<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
-<span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
     <span class="token keyword">struct</span> Date publication_time<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <p>连续使用成员运算符<code>.</code>来访问嵌套结构体的成员</p>
 <pre class=" language-c"><code class="language-c">book1<span class="token punctuation">.</span>publication_time<span class="token punctuation">.</span>year <span class="token operator">=</span> <span class="token number">2021</span><span class="token punctuation">;</span>
@@ -732,13 +741,13 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
 <li>结构体变量作为函数参数形参时也是值传递，在函数内修改形参，不会影响外界实参。</li>
 </ul>
 <pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
-<span class="token keyword">struct</span> Books <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> Books <span class="token punctuation">{</span>
     <span class="token keyword">int</span> book_id<span class="token punctuation">;</span>
     <span class="token keyword">char</span> <span class="token operator">*</span>title<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">struct</span> Books book<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> Books book1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token keyword">struct</span> Books book2<span class="token punctuation">;</span>
     book2 <span class="token operator">=</span> book1<span class="token punctuation">;</span>
     book2<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"C++"</span><span class="token punctuation">;</span>
@@ -747,11 +756,11 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
     <span class="token function">f</span><span class="token punctuation">(</span>book1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1 Python</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> book1<span class="token punctuation">.</span>book_id<span class="token punctuation">,</span> book1<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 1 C</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> 
-<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">struct</span> Books book<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">struct</span> Books book<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     book<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"Python"</span><span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d : %s\n"</span><span class="token punctuation">,</span> book<span class="token punctuation">.</span>book_id<span class="token punctuation">,</span> book<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 
                 
@@ -829,7 +838,7 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="twitter,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
     
 
@@ -994,13 +1003,13 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/">
+                <a href="/2021/12/08/gong-yong-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Hexo管理文章的基本操作">
+                        <img src="/medias/featureimages/49.png" class="responsive-img" alt="共用体">
                         
-                        <span class="card-title">Hexo管理文章的基本操作</span>
+                        <span class="card-title">共用体</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1011,12 +1020,16 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            cfxin
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1024,8 +1037,8 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
                     </a>
                     
                 </div>
@@ -1036,16 +1049,16 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/08/jie-gou-ti/">
+                <a href="/2021/12/08/fen-zhi-jie-gou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C语言：结构体">
+                        <img src="/medias/featureimages/69.png" class="responsive-img" alt="分支结构">
                         
-                        <span class="card-title">C语言：结构体</span>
+                        <span class="card-title">分支结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1070,12 +1083,11 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                        <span class="chip bg-color">C语言</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -1088,6 +1100,43 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
 
 </div>
 
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('100')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 程不懂の博客<br />'
+            + '文章作者: cfxin<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
 
 
 <!-- 代码块功能依赖 -->
@@ -1207,63 +1256,16 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
     
 
     <div class="container row center-align"
@@ -1271,12 +1273,15 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
             <a href="/about" target="_blank">cfxin</a>
-            |&nbsp;博客框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">20.9k</span>
             
             
             
@@ -1302,44 +1307,61 @@ book1<span class="token punctuation">.</span>publication_time<span class="token 
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <!-- <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
+    <!-- <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
     <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/cheng-feng-xin-12" class="tooltipped" target="_blank" data-tooltip="关注我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
     </a>
 
 
-<!-- 
 
- -->
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
+    <a href="https://www.yuque.com/chengbudong" class="tooltipped" target="_blank" data-tooltip="关注我的语雀" data-position="top" data-delay="50">
+        <i class="fas fa-crow"></i>
     </a>
 
 
 
-
-
-
-
-
-<!-- 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
- -->
 </div>
     </div>
 </footer>
 
 <div class="progress-bar"></div>
+
+<!-- 不蒜子统计. -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 
     <!-- 搜索遮罩框 -->
@@ -1469,6 +1491,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -1508,6 +1538,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     

@@ -34,6 +34,16 @@
 
 
 
+   <style>
+    body{
+       background-image: url(/medias/wallhaven.png);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -103,17 +113,6 @@
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -210,17 +209,6 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
@@ -233,7 +221,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/cfxin" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -290,7 +278,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/cfxin" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -351,6 +339,13 @@
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
 
     <div class="carousel-item  white-text bg-cover about-cover">
         <div class="container">
@@ -359,7 +354,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                一只程序猿的修炼之路
+                一只程序猿的冒险之路
                 
             </div>
 
@@ -371,9 +366,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "愿一切为之努力的事情在日后都有一个浪漫的结果。",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "May everything you work for have a romantic outcome in the future。",
                             
                         ],
                         startDelay: 300,
@@ -410,43 +405,99 @@
                 
             </div>
             <div class="cover-social-link">
-    <!-- <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
+    <!-- <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
     <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/cheng-feng-xin-12" class="tooltipped" target="_blank" data-tooltip="关注我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
     </a>
 
 
-<!-- 
 
- -->
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
+    <a href="https://www.yuque.com/chengbudong" class="tooltipped" target="_blank" data-tooltip="关注我的语雀" data-position="top" data-delay="50">
+        <i class="fas fa-crow"></i>
     </a>
 
 
 
-
-
-
-
-
-<!-- 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
- -->
 </div>
         </div>
     </div>
 
+    
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/coverImg/coverImg4.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">Hexo管理文章的基本操作</div>
+                            <div class="description center-align">
+                                
+                                    1. 创建md文件Hexo 使用 Markdown 解析文章，md文件也就是Markdown文件，通过以下命令创建：
+hexo n &lt;title>
+# 例如
+hexo n "Hexo管理文章的基本操作"
+
+
+这里可以看到创建了一个He
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/coverImg/coverImg1.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">LaTeX的使用</div>
+                            <div class="description center-align">
+                                
+                                    LaTeX基础TEX是什么TEX 是高德纳 (Donald E. Knuth) 为排版文字和数学公式而开发的程序。
+
+TEX 系统提供了 300 + 600 多条基本的排版命令 
+TEX 是目前公认的数学公式排版最好的排版语言
+TEX 是免
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/12/13/latex-de-shi-yong/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     
 </div>
 
@@ -525,12 +576,12 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;做一个笨蛋
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+            世界上有时候就是有这样的笨蛋，这种笨蛋看准了目标绝不会放弃，会战斗到底，那种人对敌人来说是最难缠的。 在这场比赛，不管他是赢也好，是输也好，我喜欢那个小子的作风! ——尾田荣一郎 《海贼王》
         </div>
     </div>
 </div>
@@ -545,6 +596,76 @@
                     <div id="recommend-sections" class="recommend">
                         
 
+
+
+
+
+<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
+
+<div class="row">
+
+    
+    
+    <div class="col s12 m6" >
+        
+            <div class="post-card" style="background-image: url('/medias/featureimages/10.png')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" class="category">博客建设</a>
+                        
+                    
+                </div>
+                <a href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/">
+                    <h3 class="post-title">Hexo管理文章的基本操作</h3>
+                </a>
+                <p class="post-description">
+                    
+                        1. 创建md文件Hexo 使用 Markdown 解析文章，md文件也就是Markdown文件，通过以下命令创建：
+hexo n &lt;
+                    
+                </p>
+                <a href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" >
+        
+            <div class="post-card" style="background-image: url('/medias/featureimages/48.png')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="category">软件与工具</a>
+                        
+                    
+                </div>
+                <a href="/2021/12/13/latex-de-shi-yong/">
+                    <h3 class="post-title">LaTeX的使用</h3>
+                </a>
+                <p class="post-description">
+                    
+                        LaTeX基础TEX是什么TEX 是高德纳 (Donald E. Knuth) 为排版文字和数学公式而开发的程序。
+
+TEX 系统提供了 3
+                    
+                </p>
+                <a href="/2021/12/13/latex-de-shi-yong/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
 
 
                     </div>
@@ -568,7 +689,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Hexo管理文章的基本操作">
+                            <img src="/medias/featureimages/10.png" class="responsive-img" alt="Hexo管理文章的基本操作">
                             
                             <span class="card-title">Hexo管理文章的基本操作</span>
                         </div>
@@ -592,8 +713,12 @@ hexo n "Hexo管理文章的基本操作"
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-user fa-fw"></i>
-                                cfxin
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" class="post-category">
+                                    博客建设
+                                </a>
+                                
                                 
                             </span>
                         </div>
@@ -615,11 +740,346 @@ hexo n "Hexo管理文章的基本操作"
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/12/08/jie-gou-ti/">
+                    <a href="/2021/12/20/typora-de-yi-xie-pei-zhi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C语言：结构体">
+                            <img src="/medias/featureimages/62.png" class="responsive-img" alt="Typora的一些配置">
+                            
+                            <span class="card-title">Typora的一些配置</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                配合PicGo自动上传图片
+下载配置PicGo
+
+我这里以上传到gitee为例：
+
+
+设置typora和PicGo关联
+
+文件–&gt;偏好设置–&gt;图像
+
+然后开启自动上传：格式–&gt;图像–&gt;当插入本地图片时–&gt;上传图
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Typora/">
+                            <span class="chip bg-color">Typora</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/15/wsl2-ubuntu-miniconda3-pycharm-pei-zhi/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/47.png" class="responsive-img" alt="wsl2(Ubuntu) + Miniconda3 + PyCharm配置">
+                            
+                            <span class="card-title">wsl2(Ubuntu) + Miniconda3 + PyCharm配置</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                WSL2安装WSL的安装之前已写过，按照这边文章操作即可。win10下wsl2+golang+goland配置
+安装Miniconda3Miniconda是一个免费的conda最小安装程序。它是Anaconda的一个小型版本，只包括cond
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Linux/">
+                            <span class="chip bg-color">Linux</span>
+                        </a>
+                        
+                        <a href="/tags/wsl2/">
+                            <span class="chip bg-color">wsl2</span>
+                        </a>
+                        
+                        <a href="/tags/PyCharm/">
+                            <span class="chip bg-color">PyCharm</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/15/mysql-8.0-yi-shang-chong-zhi-chu-shi-mi-ma-de-fang-fa-win10/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/10.png" class="responsive-img" alt="Mysql 8.0以上重置初始密码的方法(Win10)">
+                            
+                            <span class="card-title">Mysql 8.0以上重置初始密码的方法(Win10)</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                网上大部分的方法都是通过在My.ini或是My_default.ini中添加–skip-grant-tables的方法来实现跳过Mysql密码来连接数据库，并更改密码，然而都没有成功。
+
+以下命令行代码均在管理员模式下操作
+
+第一步：关闭M
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Mysql/">
+                            <span class="chip bg-color">Mysql</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/15/lun-wen-xie-zuo-wang-zhan-he-gong-ju-fen-xiang/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/81.png" class="responsive-img" alt="论文写作-网站和工具分享">
+                            
+                            <span class="card-title">论文写作-网站和工具分享</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                论文检索谷歌学术镜像最常用的，可以搜索到网上公布出来的全部文献。
+学术资源在线有文献求助功能，遇到有需要付费的下载文献可以在这里进行求助。
+IEEEIEEE 出版的期刊文章和 EI 收录的会议文章都可以在这里找到。在校生一般都可以免费使用，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" class="post-category">
+                                    资源分享
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                            <span class="chip bg-color">论文写作</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/13/latex-de-shi-yong/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/48.png" class="responsive-img" alt="LaTeX的使用">
+                            
+                            <span class="card-title">LaTeX的使用</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                LaTeX基础TEX是什么TEX 是高德纳 (Donald E. Knuth) 为排版文字和数学公式而开发的程序。
+
+TEX 系统提供了 300 + 600 多条基本的排版命令 
+TEX 是目前公认的数学公式排版最好的排版语言
+TEX 是免
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Latex/">
+                            <span class="chip bg-color">Latex</span>
+                        </a>
+                        
+                        <a href="/tags/overleaf/">
+                            <span class="chip bg-color">overleaf</span>
+                        </a>
+                        
+                        <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                            <span class="chip bg-color">论文写作</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/gong-yong-ti/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/49.png" class="responsive-img" alt="共用体">
+                            
+                            <span class="card-title">共用体</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                什么是共用体
+和结构体不同的是，结构体的每个成员都是占用一块独立的存储空间，而共用体所有的成员都占用同一块存储空间。
+和结构体一样，共用体在使用之前必须先定义共用体类型，再定义共用体变量。
+
+定义共用体类型union 共用体名{
+    数
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                            <span class="chip bg-color">C语言</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/jie-gou-ti/">
+                        <div class="card-image">
+                            
+                            <img src="https://gitee.com/chengbudong/noteimg/raw/master/image/p2623891164.webp" class="responsive-img" alt="C语言：结构体">
                             
                             <span class="card-title">C语言：结构体</span>
                         </div>
@@ -661,69 +1121,237 @@ hexo n "Hexo管理文章的基本操作"
             </div>
               <!-- 隐藏某个文章 -->
             
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/fen-zhi-jie-gou/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/69.png" class="responsive-img" alt="分支结构">
+                            
+                            <span class="card-title">分支结构</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                应用场景迄今为止，我们写的Python代码都是一条一条语句顺序执行，这种代码结构通常称之为顺序结构。然而仅有顺序结构并不能解决所有的问题，比如我们设计一个游戏，游戏第一关的通关条件是玩家获得1000分，那么在完成本局游戏后，我们要根据玩家得
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Python/">
+                            <span class="chip bg-color">Python</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/python-yu-yan-yuan-su/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/65.png" class="responsive-img" alt="Python语言元素">
+                            
+                            <span class="card-title">Python语言元素</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                作为一个程序员，可能经常会被外行人问到两个问题，其一是“什么是（计算机）程序”，其二是“写（计算机）程序能做什么”，这里我们先对两个问题做一个回答。程序是指令的集合，写程序就是用指令控制计算机做我们想让它做的事情。那么，为什么要用Pytho
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Python/">
+                            <span class="chip bg-color">Python</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/b-zhan-ji-suan-ji-lei-xue-xi-zi-yuan-zheng-li/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/77.png" class="responsive-img" alt="B站计算机类学习资源整理">
+                            
+                            <span class="card-title">B站计算机类学习资源整理</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、计算机网络
+1.  计算机网络微课堂https://www.bilibili.com/video/BV1c4411d7jb?p=1
+讲师：湖科大教书匠评价：通俗易懂，重点知识十分细致，配合实验，而且有考研408 的难题的讲解，也是非常适
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" class="post-category">
+                                    资源分享
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/B%E7%AB%99/">
+                            <span class="chip bg-color">B站</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/12/08/kms-fu-wu-ji-huo-win10-he-office/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="KMS服务激活win10和office">
+                            
+                            <span class="card-title">KMS服务激活win10和office</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                服务器服务器地址：http://kms.03k.org(点击检查是否可用)；服务作用：在线激活windows和office适用对象：VOL版本的windows和office适用版本：截止到win10和office2016的所有版本公开地址有
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/win10%E6%BF%80%E6%B4%BB/">
+                            <span class="chip bg-color">win10激活</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
         </div>
     </article>
 
 </main>
 
 
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
+<div class="container paging">
     <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/2/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
 
+
+
+    <footer class="page-footer bg-color">
     
 
     <div class="container row center-align"
@@ -731,12 +1359,15 @@ hexo n "Hexo管理文章的基本操作"
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
             <a href="/about" target="_blank">cfxin</a>
-            |&nbsp;博客框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">20.9k</span>
             
             
             
@@ -762,44 +1393,61 @@ hexo n "Hexo管理文章的基本操作"
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <!-- <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
+    <!-- <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"> -->
     <a href="https://github.com/cfxin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/cheng-feng-xin-12" class="tooltipped" target="_blank" data-tooltip="关注我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
     </a>
 
 
-<!-- 
 
- -->
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
+    <a href="https://www.yuque.com/chengbudong" class="tooltipped" target="_blank" data-tooltip="关注我的语雀" data-position="top" data-delay="50">
+        <i class="fas fa-crow"></i>
     </a>
 
 
 
-
-
-
-
-
-<!-- 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
- -->
 </div>
     </div>
 </footer>
 
 <div class="progress-bar"></div>
+
+<!-- 不蒜子统计. -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 
     <!-- 搜索遮罩框 -->
@@ -929,6 +1577,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -968,6 +1624,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
