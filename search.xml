@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>PicGo配置图床</title>
+      <link href="/2021/12/24/picgo-pei-zhi-tu-chuang/"/>
+      <url>/2021/12/24/picgo-pei-zhi-tu-chuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="PicGo-Gitee搭建个人图床"><a href="#PicGo-Gitee搭建个人图床" class="headerlink" title="PicGo+Gitee搭建个人图床"></a>PicGo+Gitee搭建个人图床</h2><h3 id="1-PicGo下载安装"><a href="#1-PicGo下载安装" class="headerlink" title="1. PicGo下载安装"></a>1. PicGo下载安装</h3><p>进入<a href="https://github.com/Molunerfinn/PicGo/releases">PicGo官方地址</a>下载所需要的安装包。</p><p>安装好后，在软件的插件设置里安装上传gitee所需要的插件，我这里使用的是<code>gitee-smart 1.1.7</code>。</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224135031.png"></p><h3 id="2-Gitee上创建存放图片的仓库"><a href="#2-Gitee上创建存放图片的仓库" class="headerlink" title="2. Gitee上创建存放图片的仓库"></a>2. Gitee上创建存放图片的仓库</h3><ol><li>打开<a href="https://gitee.com/">Gitee官网</a>创建仓库，如果没注册的先自行注册账号，Gitee免费提供5G的存储空间。</li></ol><p>新建仓库时注意：</p><ul><li>设置为开源</li><li>Readme文件初始化</li></ul><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224140258.png"></p><ol start="2"><li>创建私人令牌</li></ol><p><code>个人头像--&gt;设置--&gt;私人令牌--&gt;生成新令牌</code></p><blockquote><p>注意: 令牌生成后只能看见一次, 记得复制粘贴保存下来, 关闭之后就看不到了.</p></blockquote><ol start="3"><li>私人令牌权限设置</li></ol><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224141514.png"></p><h3 id="3-配置PicGo"><a href="#3-配置PicGo" class="headerlink" title="3. 配置PicGo"></a>3. 配置PicGo</h3><ol><li>进入PicGo软件, 选择图床设置, 找到gitee</li><li>gitee配置如下:</li></ol><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224143035.png"></p><blockquote><p>repo: 用户名/仓库名, 可以在刚创建的仓库里进行复制<br>branch: 分支, 创建仓库时选择了master单分支, 所以这里填master<br>token: 填刚在Gitee上创建的私人令牌<br>path: 图片在仓库中的存储路径，我这里存储在image下<br>customPath：默认即可<br>customURL: 默认即可</p></blockquote><h2 id="PicGo配置SM-MS公共图床"><a href="#PicGo配置SM-MS公共图床" class="headerlink" title="PicGo配置SM.MS公共图床"></a>PicGo配置SM.MS公共图床</h2><h3 id="1-获得SM-MS的密令Token"><a href="#1-获得SM-MS的密令Token" class="headerlink" title="1. 获得SM.MS的密令Token"></a>1. 获得SM.MS的密令Token</h3><p>SM.MS是一个老牌公共图床, 永久存储免注册，图片链接支持https，可以删除上传的图片，提供多种图片链接格式. 单张图片最大5M，每分钟最多上传10张, 有5G免费空间.</p><p>进入<a href="https://sm.ms/">SM.MS官网</a>注册账号, 点击<code>User--&gt;Login</code>注册登录，登录后点击相同的位置，进入Dashboard. 左侧菜单栏找到<code>API Token</code>, 创建Token.</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224145857.png"></p><h3 id="2-PicGo中配置"><a href="#2-PicGo中配置" class="headerlink" title="2. PicGo中配置"></a>2. PicGo中配置</h3><p>在PicGo中配置SM.MS非常简单, PicGO默认支持上传SM.MS图床, 不需要额外安装插件,  只需要填入密令Token即可.</p><p><img src="https://s2.loli.net/2021/12/24/NehaJXuBEYivjsr.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件与工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PicGo </tag>
+            
+            <tag> 图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo管理文章的基本操作</title>
       <link href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/"/>
       <url>/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/</url>
