@@ -29,9 +29,9 @@
     
     
     <entry>
-      <title>Typora的一些配置</title>
-      <link href="/2021/12/20/typora-de-yi-xie-pei-zhi/"/>
-      <url>/2021/12/20/typora-de-yi-xie-pei-zhi/</url>
+      <title>Typora自动上传图片</title>
+      <link href="/2021/12/20/typora-zi-dong-shang-chuan-tu-pian/"/>
+      <url>/2021/12/20/typora-zi-dong-shang-chuan-tu-pian/</url>
       
         <content type="html"><![CDATA[<h2 id="配合PicGo自动上传图片"><a href="#配合PicGo自动上传图片" class="headerlink" title="配合PicGo自动上传图片"></a>配合PicGo自动上传图片</h2><ol><li><strong>下载配置PicGo</strong></li></ol><p>我这里以上传到gitee为例：</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220100720.png"></p><ol start="2"><li><strong>设置typora和PicGo关联</strong></li></ol><p>文件–&gt;偏好设置–&gt;图像</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220101432.png"></p><p>然后开启自动上传：<br>格式–&gt;图像–&gt;当插入本地图片时–&gt;上传图像</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220101657.png"></p><h2 id="设置图片居左显示"><a href="#设置图片居左显示" class="headerlink" title="设置图片居左显示"></a>设置图片居左显示</h2><p>Typora默认图片是居中显示，通过修改主题样式.css文件可实现默认居左显示。</p><ol><li><strong>打开所使用的主题样式文件</strong></li></ol><p>文件–&gt;偏好设置–&gt;外观–&gt;打开主题文件夹</p><p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211220102727.png"></p><ol start="2"><li><p><strong>打开主题的css文件，在后面添加代码</strong></p><pre class=" language-css"><code class="language-css"><span class="token selector">p <span class="token class">.md-image</span><span class="token pseudo-class">:only-child</span></span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token property">text-align</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre></li><li><p><strong>重启Typora即可生效</strong>。</p></li></ol>]]></content>
       
