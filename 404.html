@@ -123,7 +123,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -213,7 +213,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -305,7 +305,7 @@
             <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
                 <div class="brand">
                     <div class="title center-align">
-                        404 Sorry 您找的页面不存在！
+                        404
                     </div>
                     <div class="title center-align">
                         试试右上角的<span style="color:blue;font-weight:bold">搜索</span>功能？
@@ -314,7 +314,7 @@
                         <a href="/" target="_blank">返回首页</a>
                     </div>
                     <div class="description center-align">
-                        你来到了没有知识的荒原 :(
+                        Oops～，迷路了！你来到了没有知识的荒原 :(
                     </div>
                 </div>
             </div>
@@ -552,6 +552,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     

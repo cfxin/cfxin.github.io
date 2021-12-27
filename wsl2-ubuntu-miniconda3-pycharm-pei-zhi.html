@@ -4,13 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="共用体, 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
-    <meta name="description" content="什么是共用体
-和结构体不同的是，结构体的每个成员都是占用一块独立的存储空间，而共用体所有的成员都占用同一块存储空间。
-和结构体一样，共用体在使用之前必须先定义共用体类型，再定义共用体变量。
-
-定义共用体类型union 共用体名{
-    数">
+    <meta name="keywords" content="wsl2(Ubuntu) + Miniconda3 + PyCharm配置, 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
+    <meta name="description" content="WSL2安装WSL的安装之前已写过，按照这边文章操作即可。win10下wsl2+golang+goland配置
+安装Miniconda3Miniconda是一个免费的conda最小安装程序。它是Anaconda的一个小型版本，只包括cond">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>共用体 | 程不懂の博客</title>
+    <title>wsl2(Ubuntu) + Miniconda3 + PyCharm配置 | 程不懂の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -128,7 +124,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -218,7 +214,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -302,12 +298,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/49.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/47.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">共用体</h1>
+                    <h1 class="description center-align post-title">wsl2(Ubuntu) + Miniconda3 + PyCharm配置</h1>
                 </div>
             </div>
         </div>
@@ -423,8 +419,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                                <span class="chip bg-color">C语言</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/wsl2/">
+                                <span class="chip bg-color">wsl2</span>
+                            </a>
+                        
+                            <a href="/tags/PyCharm/">
+                                <span class="chip bg-color">PyCharm</span>
                             </a>
                         
                     </div>
@@ -435,8 +439,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
-                                编程语言
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                软件与工具
                             </a>
                         
                     </div>
@@ -448,7 +452,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-08
+                    2021-12-15
                 </div>
                 
 
@@ -462,14 +466,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    473
+                    607
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -489,43 +493,112 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="什么是共用体"><a href="#什么是共用体" class="headerlink" title="什么是共用体"></a>什么是共用体</h2><ul>
-<li>和结构体不同的是，结构体的每个成员都是占用一块独立的存储空间，而共用体<strong>所有的成员都占用同一块存储空间</strong>。</li>
-<li>和结构体一样，共用体在使用之前必须先定义共用体类型，再定义共用体变量。</li>
+                <h2 id="WSL2安装"><a href="#WSL2安装" class="headerlink" title="WSL2安装"></a>WSL2安装</h2><p>WSL的安装之前已写过，按照这边文章操作即可。<a target="_blank" rel="noopener" href="https://www.yuque.com/chengbudong/coding/nwkmk3">win10下wsl2+golang+goland配置</a></p>
+<h2 id="安装Miniconda3"><a href="#安装Miniconda3" class="headerlink" title="安装Miniconda3"></a>安装Miniconda3</h2><p>Miniconda是一个免费的conda最小安装程序。它是Anaconda的一个小型版本，只包括conda、Python、它们所依赖的包，以及pip、zlib等少量其他有用的包。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 下载</span>
+<span class="token function">wget</span> https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<span class="token comment" spellcheck="true"># 安装</span>
+<span class="token function">bash</span> Miniconda3-latest-Linux-x86_64.sh 
+</code></pre>
+<p>根据提示一步一步地安装。安装完成后，输入</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> ~/.bashrc  <span class="token comment" spellcheck="true">#重新激活环境变量</span>
+conda -V          <span class="token comment" spellcheck="true">#检查conda是否安装成功</span>
+</code></pre>
+<h3 id="添加镜像"><a href="#添加镜像" class="headerlink" title="添加镜像"></a>添加镜像</h3><pre class=" language-bash"><code class="language-bash">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+</code></pre>
+<h3 id="创建python环境"><a href="#创建python环境" class="headerlink" title="创建python环境"></a>创建python环境</h3><p>创建自己需要的虚拟环境，也就是自己的工作区。基本命令需指定<strong>环境名称</strong>和<strong>Python 版本</strong>：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 基本格式</span>
+conda create -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span> <span class="token punctuation">[</span>python<span class="token operator">=</span>version<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 例子</span>
+conda create -n python_3.6 python<span class="token operator">=</span>3.6
+</code></pre>
+<p>安装完毕后，进入 conda 环境：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 进入</span>
+conda active python_3.6
+<span class="token comment" spellcheck="true"># 退出</span>
+conda deactivate
+</code></pre>
+<h2 id="pycharm配置"><a href="#pycharm配置" class="headerlink" title="pycharm配置"></a>pycharm配置</h2><p>使用 Pycharm 内置终端打开 WSL 运行 Python 代码</p>
+<pre class=" language-bash"><code class="language-bash">bask    <span class="token comment" spellcheck="true"># 在pycharm终端里输入</span>
+conda activate <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span>    <span class="token comment" spellcheck="true"># 激活环境</span>
+python xxx.py <span class="token comment" spellcheck="true"># 运行.py文件</span>
+</code></pre>
+<p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211215204103.png"></p>
+<h3 id="附：Conda-的基本使用"><a href="#附：Conda-的基本使用" class="headerlink" title="附：Conda 的基本使用"></a>附：Conda 的基本使用</h3><ul>
+<li>环境管理</li>
 </ul>
-<h2 id="定义共用体类型"><a href="#定义共用体类型" class="headerlink" title="定义共用体类型"></a>定义共用体类型</h2><pre class=" language-c"><code class="language-c"><span class="token keyword">union</span> 共用体名<span class="token punctuation">{</span>
-    数据类型 属性名称<span class="token punctuation">;</span>
-    数据类型 属性名称<span class="token punctuation">;</span>
-        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<p>conda 常用操作可使用命令<code>conda -h</code>和<code>conda config -h</code>查看，这里列出几个常用命令：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建</span>
+conda create -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 删除</span>
+conda <span class="token function">env</span> remove -n <span class="token punctuation">[</span>env_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 参照配置文件更新</span>
+conda <span class="token function">env</span> update --file <span class="token punctuation">[</span>file.yml<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 环境列表</span>
+conda <span class="token function">env</span> list
+<span class="token comment" spellcheck="true"># conda 信息</span>
+conda info
+<span class="token comment" spellcheck="true"># 添加频道</span>
+conda config --add channels <span class="token punctuation">[</span>channel<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 删除频道</span>
+conda config --remove channels <span class="token punctuation">[</span>channel<span class="token punctuation">]</span>
 </code></pre>
-<blockquote>
-<p> <strong>特点</strong>: 由于所有属性共享同一块内存空间，所以只要其中一个属性发生了改变，其它的属性都会受到影响 </p>
-</blockquote>
-<h2 id="定义共用体类型变量"><a href="#定义共用体类型变量" class="headerlink" title="定义共用体类型变量"></a>定义共用体类型变量</h2><pre class=" language-c"><code class="language-c"><span class="token keyword">union</span> 共用体名 共用体变量名称<span class="token punctuation">;</span>
-</code></pre>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
-<span class="token keyword">union</span> Person <span class="token punctuation">{</span>
-    <span class="token keyword">char</span> ch<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> age<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">union</span> Person p1<span class="token punctuation">;</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"sizeof = %i\n"</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 4</span>
-    p1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"p1.age = %i\n"</span><span class="token punctuation">,</span> p1<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 25</span>
-    p1<span class="token punctuation">.</span>ch <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"p1.ch = %c\n"</span><span class="token punctuation">,</span> p1<span class="token punctuation">.</span>ch<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// a</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"p1.age = %i\n"</span><span class="token punctuation">,</span> p1<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 97</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
-<li>通信中的数据包会用到共用体，因为不知道对方会发送什么样的数据包过来，用共用体定义几种格式的包，收到包之后就可以根据包的格式取出数据。</li>
-<li>节约内存。如果有2个很长的数据结构，但不会同时使用，比如一个表示老师，一个表示学生，要统计老师和学生的情况，用结构体就比较浪费内存，这时就可以考虑用共用体来设计。</li>
-<li>某些应用需要大量的临时变量，这些变量类型不同，而且会随时更换。而你的堆栈空间有限，不能同时分配那么多临时变量。这时可以使用共用体让这些变量共享同一个内存空间，这些临时变量不用长期保存，用完即丢，和寄存器差不多，不用维护。</li>
+<ul>
+<li>包管理</li>
 </ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 安装</span>
+conda <span class="token function">install</span> <span class="token punctuation">[</span>package_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 删除</span>
+conda uninstall <span class="token punctuation">[</span>package_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 更新</span>
+conda update <span class="token punctuation">[</span>package_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 更新所有包</span>
+conda update --all
+<span class="token comment" spellcheck="true"># 搜索</span>
+conda search <span class="token punctuation">[</span>package_name<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 已安装列表</span>
+conda list
+</code></pre>
+<ul>
+<li>配置文件：conda 会生成配置文件<code>.condarc</code>。其位置如下：</li>
+<li>Windows：<code>C:\Users\username\.condarc</code></li>
+<li>MacOS 和 Linux：<code>~/.condarc</code></li>
+</ul>
+<p>其文件结构如下：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 频道</span>
+channels:
+  - conda-forge
+  - defaults
+<span class="token comment" spellcheck="true"># 将 pip 作为 Python 的依赖</span>
+add_pip_as_python_dependency: <span class="token boolean">true</span>
+<span class="token comment" spellcheck="true"># 安装按照频道的顺序</span>
+channel_priority: <span class="token boolean">false</span>
+<span class="token comment" spellcheck="true"># 生成错误报告</span>
+report_errors: <span class="token boolean">false</span>
+<span class="token comment" spellcheck="true"># ssl 验证</span>
+ssl_verify: <span class="token boolean">false</span>
+<span class="token comment" spellcheck="true"># 显示频道具体链接</span>
+show_channel_urls: <span class="token boolean">true</span>
+<span class="token comment" spellcheck="true"># 错误回滚</span>
+rollback_enabled: <span class="token boolean">true</span>
+<span class="token comment" spellcheck="true"># 重试</span>
+remote_max_retries: 3
+</code></pre>
+<ul>
+<li>镜像：为了加快速度，国内往往需要使用镜像，修改<code>channels</code>如下</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash">channels:
+ <span class="token comment" spellcheck="true"># 中科大镜像</span>
+  - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+ <span class="token comment" spellcheck="true"># 清华镜像</span>
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+</code></pre>
 
                 
             </div>
@@ -552,7 +625,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cfxin.github.io/2021/12/08/gong-yong-ti/">https://cfxin.github.io/2021/12/08/gong-yong-ti/</a>
+                    <a href="https://cfxin.github.io/wsl2-ubuntu-miniconda3-pycharm-pei-zhi.html">https://cfxin.github.io/wsl2-ubuntu-miniconda3-pycharm-pei-zhi.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,8 +663,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                                    <span class="chip bg-color">C语言</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/wsl2/">
+                                    <span class="chip bg-color">wsl2</span>
+                                </a>
+                            
+                                <a href="/tags/PyCharm/">
+                                    <span class="chip bg-color">PyCharm</span>
                                 </a>
                             
                         </div>
@@ -767,13 +848,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/13/latex-de-shi-yong/">
+                <a href="/typora-zi-dong-shang-chuan-tu-pian.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/48.png" class="responsive-img" alt="LaTeX的使用">
+                        <img src="/medias/featureimages/21.png" class="responsive-img" alt="Typora自动上传图片">
                         
-                        <span class="card-title">LaTeX的使用</span>
+                        <span class="card-title">Typora自动上传图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -784,7 +865,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
                         </span>
                         <span class="publish-author">
                             
@@ -801,16 +882,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Latex/">
-                        <span class="chip bg-color">Latex</span>
-                    </a>
-                    
-                    <a href="/tags/overleaf/">
-                        <span class="chip bg-color">overleaf</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
-                        <span class="chip bg-color">论文写作</span>
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
                     </a>
                     
                 </div>
@@ -824,12 +897,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/08/jie-gou-ti/">
+                <a href="/mysql-8.0-yi-shang-chong-zhi-chu-shi-mi-ma-de-fang-fa-win10.html">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/chengbudong/noteimg/raw/master/image/p2623891164.webp" class="responsive-img" alt="C语言：结构体">
                         
-                        <span class="card-title">C语言：结构体</span>
+                        <img src="/medias/featureimages/10.png" class="responsive-img" alt="Mysql 8.0以上重置初始密码的方法(Win10)">
+                        
+                        <span class="card-title">Mysql 8.0以上重置初始密码的方法(Win10)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -840,14 +914,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    编程语言
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件与工具
                                 </a>
                             
                             
@@ -857,8 +931,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                        <span class="chip bg-color">C语言</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>
@@ -1257,6 +1331,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     

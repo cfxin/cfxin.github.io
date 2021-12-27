@@ -133,7 +133,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -223,7 +223,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -549,7 +549,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cfxin.github.io/2021/12/20/typora-zi-dong-shang-chuan-tu-pian/">https://cfxin.github.io/2021/12/20/typora-zi-dong-shang-chuan-tu-pian/</a>
+                    <a href="https://cfxin.github.io/typora-zi-dong-shang-chuan-tu-pian.html">https://cfxin.github.io/typora-zi-dong-shang-chuan-tu-pian.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -764,7 +764,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/20/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo/">
+                <a href="/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo.html">
                     <div class="card-image">
                         
                         
@@ -813,7 +813,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/15/wsl2-ubuntu-miniconda3-pycharm-pei-zhi/">
+                <a href="/wsl2-ubuntu-miniconda3-pycharm-pei-zhi.html">
                     <div class="card-image">
                         
                         
@@ -1255,6 +1255,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     

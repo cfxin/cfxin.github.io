@@ -123,7 +123,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -213,7 +213,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -355,29 +355,29 @@
                 
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" title="博客建设: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">博客建设
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="资源分享: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            style="background-color: #F5EEF8;">资源分享
+                            style="background-color: #F9EBEA;">资源分享
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" title="软件与工具: 6">
+                <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" title="软件与工具: 7">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">软件与工具
-                        <span class="tag-length">6</span>
+                            style="background-color: #F5EEF8;">软件与工具
+                        <span class="tag-length">7</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" title="博客建设: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">博客建设
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -404,7 +404,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/12/15/lun-wen-xie-zuo-wang-zhan-he-gong-ju-fen-xiang/">
+                    <a href="/lun-wen-xie-zuo-wang-zhan-he-gong-ju-fen-xiang.html">
                         <div class="card-image tag-image">
                             
                             
@@ -452,7 +452,7 @@ IEEEIEEE 出版的期刊文章和 EI 收录的会议文章都可以在这里找�
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/12/08/b-zhan-ji-suan-ji-lei-xue-xi-zi-yuan-zheng-li/">
+                    <a href="/b-zhan-ji-suan-ji-lei-xue-xi-zi-yuan-zheng-li.html">
                         <div class="card-image tag-image">
                             
                             
@@ -726,6 +726,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     

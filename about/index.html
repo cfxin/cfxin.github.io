@@ -123,7 +123,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -213,7 +213,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -357,7 +357,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">14</a></span>
+    <span class="count"><a href="/">15</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -371,7 +371,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">15</a></span>
+    <span class="count"><a href="/tags">16</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -387,7 +387,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">14</a></span>
+    <span class="count"><a href="/">15</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -401,7 +401,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">15</a></span>
+    <span class="count"><a href="/tags">16</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -543,7 +543,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,14],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,15],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -585,7 +585,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"博客建设","value":1},{"name":"资源分享","value":2},{"name":"软件与工具","value":6},{"name":"编程语言","value":5}],
+                data: [{"name":"资源分享","value":2},{"name":"软件与工具","value":7},{"name":"博客建设","value":1},{"name":"编程语言","value":5}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -609,7 +609,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Python","论文写作","C语言","Hexo","B站","win10激活","Latex","overleaf","Typora","Linux"]
+                data: ["Python","论文写作","C语言","B站","win10激活","Hexo","Mysql","Latex","overleaf","Typora"]
             }
         ],
         yAxis: [
@@ -718,12 +718,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/Hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">Hexo</span>
-            </a>
-            
-            
-            
             <a href="/tags/B%E7%AB%99/">
                 <span class="chip center-align waves-effect waves-light chip-default">B站</span>
             </a>
@@ -732,6 +726,18 @@
             
             <a href="/tags/win10%E6%BF%80%E6%B4%BB/">
                 <span class="chip center-align waves-effect waves-light chip-default">win10激活</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">Hexo</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Mysql/">
+                <span class="chip center-align waves-effect waves-light chip-default">Mysql</span>
             </a>
             
             
@@ -754,10 +760,16 @@
             
             
             
-            
-            
             <a href="/tags/Typora/">
                 <span class="chip center-align waves-effect waves-light chip-default">Typora</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/tags/markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">markdown</span>
             </a>
             
             
@@ -776,18 +788,6 @@
             
             
             
-            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                <span class="chip center-align waves-effect waves-light chip-default">C语言</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Mysql/">
-                <span class="chip center-align waves-effect waves-light chip-default">Mysql</span>
-            </a>
-            
-            
-            
             <a href="/tags/PicGo/">
                 <span class="chip center-align waves-effect waves-light chip-default">PicGo</span>
             </a>
@@ -796,6 +796,12 @@
             
             <a href="/tags/%E5%9B%BE%E5%BA%8A/">
                 <span class="chip center-align waves-effect waves-light chip-default">图床</span>
+            </a>
+            
+            
+            
+            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                <span class="chip center-align waves-effect waves-light chip-default">C语言</span>
             </a>
             
             
@@ -1098,6 +1104,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     

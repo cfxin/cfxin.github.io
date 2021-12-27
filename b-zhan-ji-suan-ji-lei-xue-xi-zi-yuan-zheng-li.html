@@ -4,12 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Mysql 8.0以上重置初始密码的方法(Win10), 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
-    <meta name="description" content="网上大部分的方法都是通过在My.ini或是My_default.ini中添加–skip-grant-tables的方法来实现跳过Mysql密码来连接数据库，并更改密码，然而都没有成功。
-
-以下命令行代码均在管理员模式下操作
-
-第一步：关闭M">
+    <meta name="keywords" content="B站计算机类学习资源整理, 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
+    <meta name="description" content="一、计算机网络
+1.  计算机网络微课堂https://www.bilibili.com/video/BV1c4411d7jb?p=1
+讲师：湖科大教书匠评价：通俗易懂，重点知识十分细致，配合实验，而且有考研408 的难题的讲解，也是非常适">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Mysql 8.0以上重置初始密码的方法(Win10) | 程不懂の博客</title>
+    <title>B站计算机类学习资源整理 | 程不懂の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -127,7 +125,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>友人帐</span>
     </a>
     
   </li>
@@ -217,7 +215,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友情链接
+			友人帐
 		</a>
           
         </li>
@@ -301,12 +299,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/77.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Mysql 8.0以上重置初始密码的方法(Win10)</h1>
+                    <h1 class="description center-align post-title">B站计算机类学习资源整理</h1>
                 </div>
             </div>
         </div>
@@ -422,8 +420,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Mysql/">
-                                <span class="chip bg-color">Mysql</span>
+                            <a href="/tags/B%E7%AB%99/">
+                                <span class="chip bg-color">B站</span>
                             </a>
                         
                     </div>
@@ -434,8 +432,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
-                                软件与工具
+                            <a href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" class="post-category">
+                                资源分享
                             </a>
                         
                     </div>
@@ -447,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-15
+                    2021-12-08
                 </div>
                 
 
@@ -461,14 +459,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    511
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -488,49 +486,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>网上大部分的方法都是通过在<code>My.ini</code>或是<code>My_default.ini</code>中添加<code>–skip-grant-tables</code>的方法来实现跳过Mysql密码来连接数据库，并更改密码，然而都没有成功。</p>
-<blockquote>
-<p><strong>以下命令行代码均在管理员模式下操作</strong></p>
-</blockquote>
-<h3 id="第一步：关闭Mysql服务"><a href="#第一步：关闭Mysql服务" class="headerlink" title="第一步：关闭Mysql服务"></a>第一步：关闭Mysql服务</h3><p>首先，确保自己已经关闭了Mysql的服务</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token string">"d:\Program Files\mysql8\bin"</span><span class="token punctuation">(</span>此处输入自己的Mysql安装地址<span class="token punctuation">)</span>
-net stop mysql
-</code></pre>
-<p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211215195648.png"></p>
-<h3 id="第二步：跳过Mysql密码验证"><a href="#第二步：跳过Mysql密码验证" class="headerlink" title="第二步：跳过Mysql密码验证"></a>第二步：跳过Mysql密码验证</h3><p>关闭Mysql服务之后，继续在 d:\Program Files\mysql8\bin 目录下进行操作，输入命令</p>
-<pre class=" language-bash"><code class="language-bash">mysqld --console --skip-grant-tables --shared-memory 
-</code></pre>
-<p>在输入这行代码之后，我们就已经成功跳过Mysql的密码登录了<br><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211215195732.png"></p>
-<h3 id="第三步：无密码方式进入Mysql"><a href="#第三步：无密码方式进入Mysql" class="headerlink" title="第三步：无密码方式进入Mysql"></a>第三步：无密码方式进入Mysql</h3><p>在上述步骤之后，再打开一个管理员模式运行的cmd.exe。</p>
-<p>进入 mysql 下的 bin 目录后，直接登录mysql。</p>
-<p>在命令行中输入以下代码</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token string">"d:\Program Files\mysql8\bin"</span><span class="token punctuation">(</span>此处输入自己的Mysql安装地址<span class="token punctuation">)</span>
-mysql -u root -p
-</code></pre>
-<p>此时会显示让你输入密码，直接回车，就可以成功连接Mysql</p>
-<h3 id="第四步：将登陆密码设置为空"><a href="#第四步：将登陆密码设置为空" class="headerlink" title="第四步：将登陆密码设置为空"></a>第四步：将登陆密码设置为空</h3><p>输入代码，将密码设置为空（此时还不能直接修改密码，必须先设置为空，否则会报错）。</p>
-<pre class=" language-bash"><code class="language-bash">use mysql<span class="token punctuation">;</span> <span class="token punctuation">(</span>使用mysql数据表<span class="token punctuation">)</span>
-update user <span class="token keyword">set</span> authentication_string<span class="token operator">=</span><span class="token string">''</span> where user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">;</span>（将密码置为空）
-quit<span class="token punctuation">;</span> <span class="token punctuation">(</span>然后退出Mysql<span class="token punctuation">)</span>
-</code></pre>
-<p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211215195806.png"></p>
-<h3 id="第五步：更改自己的登陆密码"><a href="#第五步：更改自己的登陆密码" class="headerlink" title="第五步：更改自己的登陆密码"></a>第五步：更改自己的登陆密码</h3><p>这里分为两个部分</p>
-<ol>
-<li>关闭第一个cmd窗口(一定要关闭！)</li>
-<li>在第二个窗口中输入代码<pre class=" language-bash"><code class="language-bash">net stop mysql <span class="token punctuation">(</span>关闭mysql服务, 虽然会显示没有开启服务，但是以防万一<span class="token punctuation">)</span>
-net start mysql <span class="token punctuation">(</span>再打开mysql服务<span class="token punctuation">)</span>
-mysql -u root -p
-</code></pre>
-</li>
-</ol>
-<p>此处会显示输入密码，直接回车就好了，第四步我们已经将他置为空了</p>
-<pre class=" language-bash"><code class="language-bash">ALTER USER <span class="token string">'root'</span>@<span class="token string">'localhost'</span> IDENTIFIED BY <span class="token string">'新密码'</span><span class="token punctuation">;</span>（更改密码）
-</code></pre>
-<p><img src="https://gitee.com/chengbudong/noteimg/raw/master/image/20211215195829.png"></p>
-<h3 id="最后一步：验证密码是否修改成功"><a href="#最后一步：验证密码是否修改成功" class="headerlink" title="最后一步：验证密码是否修改成功"></a>最后一步：验证密码是否修改成功</h3><pre class=" language-bash"><code class="language-bash">quit（退出mysql）
-mysql -u root -p 
-<span class="token punctuation">(</span>输入新密码，再次登录<span class="token punctuation">)</span>
-</code></pre>
+                <h2 id="一、计算机网络"><a href="#一、计算机网络" class="headerlink" title="一、计算机网络"></a>一、计算机网络</h2><hr>
+<h3 id="1-计算机网络微课堂"><a href="#1-计算机网络微课堂" class="headerlink" title="1.  计算机网络微课堂"></a>1.  计算机网络微课堂</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c4411d7jb?p=1"><strong>https://www.bilibili.com/video/BV1c4411d7jb?p=1</strong></a></p>
+<p>讲师：湖科大教书匠<br>评价：通俗易懂，重点知识十分细致，配合实验，而且有考研408 的难题的讲解，也是非常适合考研党，除了课程内容外还有很多习题讲解视频。因此就业党和考研党都可以食用。</p>
+<h3 id="2-王道计算机考研-计算机网络"><a href="#2-王道计算机考研-计算机网络" class="headerlink" title="2.  王道计算机考研 计算机网络"></a>2.  王道计算机考研 计算机网络</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19E411D78Q?p=1"><strong>https://www.bilibili.com/video/BV19E411D78Q?p=1</strong></a></p>
+<p>UP：王道论坛<br>评价：小姐姐声音非常好听，百听不厌，内容与考研高度贴合，非常适合考研党和声音控。</p>
+<h2 id="二、数据结构与算法"><a href="#二、数据结构与算法" class="headerlink" title="二、数据结构与算法"></a>二、数据结构与算法</h2><hr>
+<h3 id="1-【郝斌】-数据结构入门"><a href="#1-【郝斌】-数据结构入门" class="headerlink" title="1.【郝斌】-数据结构入门"></a>1.【郝斌】-数据结构入门</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11s41167h6?p=1"><strong>https://www.bilibili.com/video/BV11s41167h6?p=1</strong></a><br>老师：郝斌<br>评价：思路是以初学者的思路来思考的，非常适合小白</p>
+<h3 id="2-【C语言描述】《数据结构和算法》（小甲鱼）"><a href="#2-【C语言描述】《数据结构和算法》（小甲鱼）" class="headerlink" title="2.【C语言描述】《数据结构和算法》（小甲鱼）"></a>2.【C语言描述】《数据结构和算法》（小甲鱼）</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jW411K7yg?p=1"><strong>https://www.bilibili.com/video/BV1jW411K7yg?p=1</strong></a><br>我UP：鱼C-小甲鱼<br>评价：良心 up ，授课风格相比大学教授，语言风趣幽默，不死板，用例子带知识点，容易听得进去，亲和力拉满</p>
+<h3 id="3-尚硅谷-Java-数据结构与-Java-算法（Java数据结构与算法）"><a href="#3-尚硅谷-Java-数据结构与-Java-算法（Java数据结构与算法）" class="headerlink" title="3. 尚硅谷 Java 数据结构与 Java 算法（Java数据结构与算法）"></a>3. 尚硅谷 Java 数据结构与 Java 算法（Java数据结构与算法）</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1E4411H73v?p=1"><strong>https://www.bilibili.com/video/BV1E4411H73v?p=1</strong></a><br>UP：尚硅谷<br>讲师：韩顺平<br>评价：用JAVA语言讲数据结构和算法，韩老师视频内容全，并且每次课都会带着你写代码，把每一个例子都会实现，韩老师口碑也不必多言了。</p>
+<h2 id="三、操作系统"><a href="#三、操作系统" class="headerlink" title="三、操作系统"></a>三、操作系统</h2><hr>
+<h3 id="1-完结-2020-南京大学-操作系统：设计与实现-蒋炎岩"><a href="#1-完结-2020-南京大学-操作系统：设计与实现-蒋炎岩" class="headerlink" title="1.  [完结] 2020 南京大学  操作系统：设计与实现 (蒋炎岩)"></a>1.  [完结] 2020 南京大学  操作系统：设计与实现 (蒋炎岩)</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1N741177F5?p=1"><strong>https://www.bilibili.com/video/BV1N741177F5?p=1</strong></a><br>评价：南大的课质量真的硬，老师讲课时用的课本是 Remzi 的 Operating Systems: Three Easy Pieces ，老师的每一节视频都比较长，一次肝完贼爽，老师把晦涩的东西讲的也非常的通俗易懂，豁然开朗.</p>
+<h3 id="2-清华-操作系统原理-向勇、陈渝"><a href="#2-清华-操作系统原理-向勇、陈渝" class="headerlink" title="2.  清华 操作系统原理(向勇、陈渝)"></a>2.  清华 操作系统原理(向勇、陈渝)</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1uW411f72n"><strong>https://www.bilibili.com/video/BV1uW411f72n</strong></a><br>评价：讲解非常细致，但是稍微需要有一定的基础（毕竟老师平时是给清华大学讲课的）对于我这种考不上清华的人来说，能给我个听清华老师讲课的机会，还有什么可说的呢？</p>
+<h2 id="四、计算机组成原理"><a href="#四、计算机组成原理" class="headerlink" title="四、计算机组成原理"></a>四、计算机组成原理</h2><hr>
+<h3 id="1-计算机组成原理（哈工大刘宏伟）"><a href="#1-计算机组成原理（哈工大刘宏伟）" class="headerlink" title="1.   计算机组成原理（哈工大刘宏伟）"></a>1.   计算机组成原理（哈工大刘宏伟）</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1t4411e7LH?p=1"><strong>https://www.bilibili.com/video/BV1t4411e7LH?p=1</strong></a><br>评价：他的课课不仅适合考研人，也非常适合初学者，初学者也听得懂。建议 1.5 倍速食用。</p>
+<h2 id="五、编译原理"><a href="#五、编译原理" class="headerlink" title="五、编译原理"></a>五、编译原理</h2><hr>
+<h3 id="1-编译原理（哈工大）"><a href="#1-编译原理（哈工大）" class="headerlink" title="1. 编译原理（哈工大）"></a>1. 编译原理（哈工大）</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zW411t7YE?p=1"><strong>https://www.bilibili.com/video/BV1zW411t7YE?p=1</strong></a><br>评价：PPT 做的非常认真，讲得也很通俗易懂，思路清晰。直观简洁的，全程没有一句废话。<br>上面五块内容很多选用了大学教授的课程视频，因为这几门课原本就是科班生的必修课，加上近来针对新人和应届生的面试逐渐“八股化”，因此很多概念性的课本知识不得不补。</p>
+<h2 id="六、编程语言学习"><a href="#六、编程语言学习" class="headerlink" title="六、编程语言学习"></a>六、编程语言学习</h2><hr>
+<h3 id="1-程序设计入门-C语言-浙江大学慕课-翁恺"><a href="#1-程序设计入门-C语言-浙江大学慕课-翁恺" class="headerlink" title="1. 程序设计入门-C语言 浙江大学慕课 翁恺"></a>1. 程序设计入门-C语言 浙江大学慕课 翁恺</h3><p>B站：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19W411B7w1?p=1"><strong>https://www.bilibili.com/video/BV19W411B7w1?p=1</strong></a><br>中国大学MOOC：<a target="_blank" rel="noopener" href="https://www.icourse163.org/course/ZJU-199001"><strong>https://www.icourse163.org/course/ZJU-199001</strong></a></p>
+<h3 id="2-【C语言】《带你学C带你飞》小甲鱼"><a href="#2-【C语言】《带你学C带你飞》小甲鱼" class="headerlink" title="2. 【C语言】《带你学C带你飞》小甲鱼"></a>2. 【C语言】《带你学C带你飞》小甲鱼</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17s411N78s?p=1"><strong>https://www.bilibili.com/video/BV17s411N78s?p=1</strong></a></p>
+<h2 id="七、MySQL"><a href="#七、MySQL" class="headerlink" title="七、MySQL"></a>七、MySQL</h2><hr>
+<h3 id="1-MySQL基础教程丨mysql数据库实战（sql数据库优化）"><a href="#1-MySQL基础教程丨mysql数据库实战（sql数据库优化）" class="headerlink" title="1.  MySQL基础教程丨mysql数据库实战（sql数据库优化）"></a>1.  MySQL基础教程丨mysql数据库实战（sql数据库优化）</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xW411u7ax"><strong>https://www.bilibili.com/video/BV1xW411u7ax</strong></a><br>课程来自尚硅谷，有基础有实战。</p>
+<h3 id="2-尚硅谷MySQL数据库高级，mysql优化，数据库优化"><a href="#2-尚硅谷MySQL数据库高级，mysql优化，数据库优化" class="headerlink" title="2  尚硅谷MySQL数据库高级，mysql优化，数据库优化"></a>2  尚硅谷MySQL数据库高级，mysql优化，数据库优化</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1KW411u7vy"><strong>https://www.bilibili.com/video/BV1KW411u7vy</strong></a><br>尚硅谷的课程特点就是分好多好多好多P，每一集都好短，集数超多，如果第一天没有被这种设定劝退的话，讲的还是不错的。</p>
+<h2 id="八、Maven、Git"><a href="#八、Maven、Git" class="headerlink" title="八、Maven、Git"></a>八、Maven、Git</h2><hr>
+<h3 id="1-2020最新Maven教程-Maven基础篇之Maven实战入门"><a href="#1-2020最新Maven教程-Maven基础篇之Maven实战入门" class="headerlink" title="1. 2020最新Maven教程-Maven基础篇之Maven实战入门"></a>1. 2020最新Maven教程-Maven基础篇之Maven实战入门</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dp4y1Q7Hf"><strong>https://www.bilibili.com/video/BV1dp4y1Q7Hf</strong></a><br>课程来自动力节点，从是什么，做什么，为什么到怎么用，分步清晰</p>
+<h3 id="2-Git与GitHub基础全套完整版教程（快速上手，一套搞定）"><a href="#2-Git与GitHub基础全套完整版教程（快速上手，一套搞定）" class="headerlink" title="2. Git与GitHub基础全套完整版教程（快速上手，一套搞定）"></a>2. Git与GitHub基础全套完整版教程（快速上手，一套搞定）</h3><h5 id="https-www-bilibili-com-video-BV1pW411A7a5"><a href="#https-www-bilibili-com-video-BV1pW411A7a5" class="headerlink" title="https://www.bilibili.com/video/BV1pW411A7a5"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pW411A7a5">https://www.bilibili.com/video/BV1pW411A7a5</a></h5><p>尚硅谷的课程，评价如题，Git和GitHub快速上手一套搞定 </p>
+<h2 id="九、Linux"><a href="#九、Linux" class="headerlink" title="九、Linux"></a>九、Linux</h2><hr>
+<h3 id="1-【小白入门-通俗易懂】2021韩顺平-一周学会Linux"><a href="#1-【小白入门-通俗易懂】2021韩顺平-一周学会Linux" class="headerlink" title="1.【小白入门 通俗易懂】2021韩顺平 一周学会Linux"></a>1.【小白入门 通俗易懂】2021韩顺平 一周学会Linux</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sv411r7vd"><strong>https://www.bilibili.com/video/BV1Sv411r7vd</strong></a><br>通俗易懂，从0开始，够肝的话，一周真的可以。</p>
+<h2 id="十、面试、简历、职场、学习法、技巧、脱口秀"><a href="#十、面试、简历、职场、学习法、技巧、脱口秀" class="headerlink" title="十、面试、简历、职场、学习法、技巧、脱口秀"></a>十、面试、简历、职场、学习法、技巧、脱口秀</h2><hr>
+<h3 id="1-不高兴就喝水-水哥yyds！"><a href="#1-不高兴就喝水-水哥yyds！" class="headerlink" title="1. 不高兴就喝水  水哥yyds！"></a>1. 不高兴就喝水  水哥yyds！</h3><p><a target="_blank" rel="noopener" href="https://space.bilibili.com/412704776"><strong>https://space.bilibili.com/412704776</strong></a></p>
 
                 
             </div>
@@ -557,7 +541,7 @@ mysql -u root -p
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cfxin.github.io/2021/12/15/mysql-8.0-yi-shang-chong-zhi-chu-shi-mi-ma-de-fang-fa-win10/">https://cfxin.github.io/2021/12/15/mysql-8.0-yi-shang-chong-zhi-chu-shi-mi-ma-de-fang-fa-win10/</a>
+                    <a href="https://cfxin.github.io/b-zhan-ji-suan-ji-lei-xue-xi-zi-yuan-zheng-li.html">https://cfxin.github.io/b-zhan-ji-suan-ji-lei-xue-xi-zi-yuan-zheng-li.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -595,8 +579,8 @@ mysql -u root -p
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Mysql/">
-                                    <span class="chip bg-color">Mysql</span>
+                                <a href="/tags/B%E7%AB%99/">
+                                    <span class="chip bg-color">B站</span>
                                 </a>
                             
                         </div>
@@ -772,13 +756,13 @@ mysql -u root -p
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/15/wsl2-ubuntu-miniconda3-pycharm-pei-zhi/">
+                <a href="/python-yu-yan-yuan-su.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/47.png" class="responsive-img" alt="wsl2(Ubuntu) + Miniconda3 + PyCharm配置">
+                        <img src="/medias/featureimages/65.png" class="responsive-img" alt="Python语言元素">
                         
-                        <span class="card-title">wsl2(Ubuntu) + Miniconda3 + PyCharm配置</span>
+                        <span class="card-title">Python语言元素</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,8 +773,57 @@ mysql -u root -p
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    编程语言
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/kms-fu-wu-ji-huo-win10-he-office.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="KMS服务激活win10和office">
+                        
+                        <span class="card-title">KMS服务激活win10和office</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -806,65 +839,8 @@ mysql -u root -p
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
-                    </a>
-                    
-                    <a href="/tags/wsl2/">
-                        <span class="chip bg-color">wsl2</span>
-                    </a>
-                    
-                    <a href="/tags/PyCharm/">
-                        <span class="chip bg-color">PyCharm</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/15/lun-wen-xie-zuo-wang-zhan-he-gong-ju-fen-xiang/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/81.png" class="responsive-img" alt="论文写作-网站和工具分享">
-                        
-                        <span class="card-title">论文写作-网站和工具分享</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" class="post-category">
-                                    资源分享
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
-                        <span class="chip bg-color">论文写作</span>
+                    <a href="/tags/win10%E6%BF%80%E6%B4%BB/">
+                        <span class="chip bg-color">win10激活</span>
                     </a>
                     
                 </div>
@@ -1263,6 +1239,18 @@ $(function () {
     
 
     
+    
+    <!-- 设置动态标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
     <!-- 雪花特效 -->
     
