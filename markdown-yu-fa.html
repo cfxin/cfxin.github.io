@@ -13,10 +13,9 @@
 ###### 六级标题
 
 
-注意：标记符号后面需要一个空格才生效
+注意：#号后面需要一个空格才生效
 
-
-">
+换行现在大多数 mark">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -461,21 +460,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-27
+                    2021-12-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    71
+                    685
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -503,9 +502,88 @@
 <span class="token title important"><span class="token punctuation">######</span> 六级标题</span>
 </code></pre>
 <blockquote>
-<p>注意：标记符号后面需要一个空格才生效</p>
+<p>注意：#号后面需要一个空格才生效</p>
 </blockquote>
-<p><img src="https://s2.loli.net/2021/12/27/dmLuDsrZ1coPF3N.png"><br><img src="https://s2.loli.net/2021/12/27/OIpJgvMnX6zikSL.png"></p>
+<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>现在大多数 markdown 编辑器都支持直接<code>按回车键</code>换行，例如Typora、Markdown Preview Enhanced插件等。若直接<code>按回车键</code>不能换行，需以<code>2个或多个空格</code>结束一行，然后再<code>按回车键</code>，则会另起一行。</p>
+<h3 id="分段"><a href="#分段" class="headerlink" title="分段"></a>分段</h3><p>使用<code>空白行</code>分隔一行或多行文本。</p>
+<pre class=" language-markdown"><code class="language-markdown">这是第一段
+这还是第一段
+
+这是第二段
+</code></pre>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><ul>
+<li>加粗：在需要加粗的地方前后添加<code>2个*号</code></li>
+<li>斜体：在需要斜体的地方前后添加<code>1个*号</code></li>
+<li>粗斜体：在需要粗斜体的地方前后添加<code>3个*号</code></li>
+<li>横线删除：在需要删除的地方前后添加<code>2个~号</code></li>
+</ul>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token bold"><span class="token punctuation">**</span>我是粗体<span class="token punctuation">**</span></span>
+<span class="token italic"><span class="token punctuation">*</span>我是斜体<span class="token punctuation">*</span></span>
+<span class="token bold"><span class="token punctuation">**</span>*我是粗斜体<span class="token punctuation">**</span></span>*
+~~我会被横线删除~~
+</code></pre>
+<p><img src="https://s2.loli.net/2021/12/28/vq6LjFYyktcxh3w.png"></p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在需要引用的句子或段落前添加1个<code>&gt;空格</code>。</p>
+<ul>
+<li>块引用可以包含多个段落。在段落之间的空白行上添加一个<code>&gt;</code>。</li>
+<li>需要嵌套块引用时，在段落前面添加1个<code>&gt;&gt;空格</code>。</li>
+</ul>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> 第一段引用
+<span class="token blockquote punctuation">></span> 
+<span class="token blockquote punctuation">></span> 第二段引用
+<span class="token blockquote punctuation">>></span> 第二段引用中的引用
+</code></pre>
+<p><img src="https://s2.loli.net/2021/12/28/Q1fCRdbAlXYvP6o.png"></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li>无序列表：在条目前添加1个<code>-空格</code>。</li>
+<li>有序列表：在条目前添加<code>数字.空格</code>或<code>字母.空格</code>。</li>
+<li>嵌套列表，在条目前先添加<code>2个或多个空格</code>，再写列表。</li>
+</ul>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token list punctuation">-</span> 条目
+<span class="token list punctuation">-</span> 条目
+  <span class="token list punctuation">-</span> 条目
+  <span class="token list punctuation">-</span> 条目
+<span class="token list punctuation">1.</span> 条目1
+<span class="token list punctuation">2.</span> 条目2
+  a. 条目2.1
+  b. 条目2.2
+</code></pre>
+<p><img src="https://s2.loli.net/2021/12/28/oHvPzs56uatRErQ.png"></p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>用<code>[链接名](网址)</code>插入链接，如果需要连接名则使用<code>&lt;网址&gt;</code>的形式。若需要鼠标悬停在链接上时显示提示，则在网址后用引号<code>&#39; &#39;</code>添加提示信息。</p>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token url">[首页](https://cfxin.github.io)</span>
+&lt;https://cfxin.github.io>
+[首页](https://cfxin.github.io '提示信息')
+</code></pre>
+<p><img src="https://s2.loli.net/2021/12/28/tcKyrPkY3E8IxOd.png"></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>用<code>![图片描述](图片路径或url)</code>插入图片, 若不需要图片描述，则方括号内空着即可。</p>
+<pre class=" language-markdown"><code class="language-markdown"><span class="token url">![图1](https://s2.loli.net/2021/12/27/HfcgTuaIApjMxQN.png)</span>
+<span class="token url">![图2](/images/2.png)</span>
+</code></pre>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul>
+<li>行内代码：用``括起来。</li>
+<li>代码块：用一对<code>```</code>围起来。<ul>
+<li>在第一个<code>```</code>后指定语言可语法高亮</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2021/12/28/KTmjZ9ilnR4GJpQ.png"></p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>在单独一行上使用3个<code>-</code>可插入分割线。</p>
+<pre class=" language-markdown"><code class="language-markdown">水平线上
+
+<span class="token hr punctuation">---</span>
+
+水平线下
+</code></pre>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>使用如下形式，默认左对齐，<code>-</code>相当于<code>:-</code>表示左对齐，<code>-:</code>表示右对齐，<code>:-:</code>表示居中对齐。</p>
+<pre class=" language-markdown"><code class="language-markdown">|表头|表头|
+|-|-|
+|单元格|单元格|
+|单元格|单元格|
+</code></pre>
+<p><img src="https://s2.loli.net/2021/12/28/eIzKbXZxtDlkp95.png"></p>
+<blockquote>
+<p>参考资料：<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/index.html">Markdown中文网</a>、<a target="_blank" rel="noopener" href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">MPE插件简介</a></p>
+</blockquote>
 
                 
             </div>
@@ -743,18 +821,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/markdown-yu-fa.html">
+                <a href="/git-lian-jie-github-bao-cuo-port-22-connection-timed-out.html">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2021/12/24/1xYTHXJLykSuRPE.jpg" class="responsive-img" alt="git连接GitHub报错port 22 Connection timed out">
                         
-                        <img src="/medias/featureimages/66.png" class="responsive-img" alt="markdown语法">
-                        
-                        <span class="card-title">markdown语法</span>
+                        <span class="card-title">git连接GitHub报错port 22 Connection timed out</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -764,9 +840,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-27
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -779,12 +855,15 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
+                    </a>
+                    
+                    <a href="/tags/Github/">
+                        <span class="chip bg-color">Github</span>
                     </a>
                     
                 </div>
@@ -1030,7 +1109,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">21.4k</span>
+                        class="white-color">23.9k</span>
             
             
             
