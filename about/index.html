@@ -130,6 +130,17 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/navigate" class="waves-effect waves-light">
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+    </a>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -216,6 +227,17 @@
 			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友人帐
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/navigate" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-location-arrow"></i>
+			
+			导航
 		</a>
           
         </li>
@@ -535,7 +557,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12"]
+            data: ["2021-11","2021-12"]
         },
         yAxis: {
             type: 'value',
@@ -545,7 +567,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,18],
+                data: [0,18],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -611,7 +633,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Python","Hexo","论文写作","PicGo","markdown","C语言","B站","win10激活","Latex","overleaf"]
+                data: ["Python","Hexo","PicGo","论文写作","markdown","C语言","B站","win10激活","Mysql","图床"]
             }
         ],
         yAxis: [
@@ -738,32 +760,6 @@
             
             
             
-            <a href="/tags/Latex/">
-                <span class="chip center-align waves-effect waves-light chip-default">Latex</span>
-            </a>
-            
-            
-            
-            <a href="/tags/overleaf/">
-                <span class="chip center-align waves-effect waves-light chip-default">overleaf</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
-                <span class="chip center-align waves-effect waves-light chip-default">论文写作</span>
-            </a>
-            
-            
-            
-            
-            
-            <a href="/tags/Typora/">
-                <span class="chip center-align waves-effect waves-light chip-default">Typora</span>
-            </a>
-            
-            
-            
             <a href="/tags/Mysql/">
                 <span class="chip center-align waves-effect waves-light chip-default">Mysql</span>
             </a>
@@ -778,6 +774,32 @@
             
             <a href="/tags/%E5%9B%BE%E5%BA%8A/">
                 <span class="chip center-align waves-effect waves-light chip-default">图床</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/tags/Typora/">
+                <span class="chip center-align waves-effect waves-light chip-default">Typora</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Latex/">
+                <span class="chip center-align waves-effect waves-light chip-default">Latex</span>
+            </a>
+            
+            
+            
+            <a href="/tags/overleaf/">
+                <span class="chip center-align waves-effect waves-light chip-default">overleaf</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                <span class="chip center-align waves-effect waves-light chip-default">论文写作</span>
             </a>
             
             
@@ -800,6 +822,12 @@
             
             
             
+            <a href="/tags/vscode/">
+                <span class="chip center-align waves-effect waves-light chip-default">vscode</span>
+            </a>
+            
+            
+            
             
             
             <a href="/tags/wsl2/">
@@ -810,12 +838,6 @@
             
             <a href="/tags/PyCharm/">
                 <span class="chip center-align waves-effect waves-light chip-default">PyCharm</span>
-            </a>
-            
-            
-            
-            <a href="/tags/vscode/">
-                <span class="chip center-align waves-effect waves-light chip-default">vscode</span>
             </a>
             
             
@@ -1184,8 +1206,8 @@ $(function () {
         var OriginTitile = document.title,
             st;
         document.addEventListener("visibilitychange", function () {
-            document.hidden ? (document.title = "🙈看不见我~🙈", clearTimeout(st)) : (document.title =
-                "😛被发现了~😘", st = setTimeout(function () {
+            document.hidden ? (document.title = "🙈要玩捉迷藏嘛~🙈", clearTimeout(st)) : (document.title =
+                "😛抓到了哦~😘", st = setTimeout(function () {
                     document.title = OriginTitile
                 }, 3e3))
         })
