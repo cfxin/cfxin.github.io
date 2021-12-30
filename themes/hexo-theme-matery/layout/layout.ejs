@@ -48,8 +48,8 @@
         var OriginTitile = document.title,
             st;
         document.addEventListener("visibilitychange", function () {
-            document.hidden ? (document.title = "🙈看不见我~🙈", clearTimeout(st)) : (document.title =
-                "😛被发现了~😘", st = setTimeout(function () {
+            document.hidden ? (document.title = "🙈要玩捉迷藏嘛~🙈", clearTimeout(st)) : (document.title =
+                "😛抓到了哦~😘", st = setTimeout(function () {
                     document.title = OriginTitile
                 }, 3e3))
         })

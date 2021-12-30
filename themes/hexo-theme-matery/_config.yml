@@ -21,6 +21,10 @@ menu:
   Friends:
     url: /friends
     icon: fas fa-address-book
+  导航:
+    url: /navigate
+    icon: fas fa-location-arrow
+    
   # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
