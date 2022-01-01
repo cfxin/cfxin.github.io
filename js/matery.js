@@ -105,6 +105,11 @@ $(function () {
             // 启用字幕
             subHtmlSelectorRelative: true
         });
+        
+        // 修复使用lazyload-image插件导致的无法查看大图
+        $(document).find('img[data-original]').each(function(){
+            $(this).parent().attr("href", $(this).attr("data-original"));
+        });
 
         // progress bar init
         const progressElement = window.document.querySelector('.progress-bar');
