@@ -1,8 +1,0 @@
-/* Here is your custom css styles. */
-@font-face{
-    font-family: 'SourceHanSerif';
-    src: url('../font/SourceHanSerif.ttc');
-}
-body{
-    font-family: 'SourceHanSerif';
-}

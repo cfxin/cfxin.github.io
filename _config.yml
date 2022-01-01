@@ -100,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -126,13 +126,6 @@ permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
 
-# 启用Emoji表情
-githubEmojis:
-  enable: false # true 启用
-  className: github-emoji
-  inject: true
-  styles:
-  customEmojis:
 
 # 图片懒加载
 lazyload:
