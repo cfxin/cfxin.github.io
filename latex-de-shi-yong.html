@@ -486,7 +486,7 @@ TEX 是免">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-30
+                    2022-01-02
                 </div>
                 
 
@@ -532,7 +532,7 @@ TEX 是免">
 <p> LaTeX 是一种使用 TEX 程序作为排版引擎的格式，可以粗略地将它理解成是对 TEX 的一层封装。 </p>
 </blockquote>
 <h2 id="LaTeX的用处"><a href="#LaTeX的用处" class="headerlink" title="LaTeX的用处"></a>LaTeX的用处</h2><p>LaTeX 被广泛应用于科学文档、书籍以及许多其他出版物。它不仅可以创建精美的排版文档，而且还使得用户可以很快速地处理复杂的排版问题，比如输入数学公式、创建目录、管理引用、创建书目、保持布局一致等等。由于可用的开源软件包数量众多，因此 LaTeX 有无限的可能性。这些软件包赋予了用户更多的能力，例如添加脚注，绘制原理图，创建表格等。</p>
-<p>&nbsp;<br>人们使用 LaTeX 的最重要原因之一就是它分离了文档的内容与样式。这意味着你只需要编写文档的内容，我们就可以轻松更改其外观。同样，你也可以创建一个文档模板，用它来统一许多不同文档的外观，这样学术期刊可以创建投稿模板。这些模板具有预制的布局，只需要往里面添加内容即可。实际上，LaTeX 有数百种模板，覆盖从简历到幻灯片的所有内容。</p>
+<p>人们使用 LaTeX 的最重要原因之一就是它分离了文档的内容与样式。这意味着你只需要编写文档的内容，我们就可以轻松更改其外观。同样，你也可以创建一个文档模板，用它来统一许多不同文档的外观，这样学术期刊可以创建投稿模板。这些模板具有预制的布局，只需要往里面添加内容即可。实际上，LaTeX 有数百种模板，覆盖从简历到幻灯片的所有内容。</p>
 <h2 id="LaTeX的优点"><a href="#LaTeX的优点" class="headerlink" title="LaTeX的优点"></a>LaTeX的优点</h2><ul>
 <li>LaTeX 特点<ul>
 <li>专注于内容撰写，很少操心文档的版面设计</li>
@@ -665,7 +665,7 @@ This is <span class="token punctuation">{</span><span class="token function sele
 </li>
 <li><code>\date&#123;February 2021&#125;</code>你可以手动输入日期，或使用 \today 命令，以便在编译文档时自动更新日期。</li>
 </ul>
-<p>&nbsp;<br>现在可以使用 <code>\maketitle</code> 命令在文档上打印这些信息。这条命令应该写在文档 主体 (body) 中你想要打印标题的位置。示例：</p>
+<p>现在可以使用 <code>\maketitle</code> 命令在文档上打印这些信息。这条命令应该写在文档 主体 (body) 中你想要打印标题的位置。示例：</p>
 <pre class=" language-latex"><code class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>12pt, letterpaper, twoside<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
 <span class="token function selector">\usepackage</span><span class="token punctuation">[</span>utf8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">inputenc</span><span class="token punctuation">}</span>
 
@@ -763,16 +763,16 @@ As you can see in the figure <span class="token function selector">\ref</span><s
 <p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211212210237.png" alt="编译后的效果"></p>
 <p>在这个示例中，有三个重要的命令：</p>
 <ul>
-<li>\caption{overleaf icon}：此命令为图形设置标题。你可以将这条命令放置在图的上方或下方。</li>
-<li>\label{fig:icon}：如果你需要在文档中引用图像，请使用这条命令为图像设置标签。标签可以为图像编上号，并与下一个命令结合，对图片进行引用。</li>
-<li>\ref{fig:icon}：这条命令在编译后将显示替换为被引用图片对应的编号。</li>
+<li><code>\caption&#123;overleaf icon&#125;</code>：此命令为图形设置标题。你可以将这条命令放置在图的上方或下方。</li>
+<li><code>\label&#123;fig:icon&#125;</code>：如果你需要在文档中引用图像，请使用这条命令为图像设置标签。标签可以为图像编上号，并与下一个命令结合，对图片进行引用。</li>
+<li><code>\ref&#123;fig:icon&#125;</code>：这条命令在编译后将显示替换为被引用图片对应的编号。</li>
 </ul>
 <blockquote>
 <p>将图像放置在 LaTeX 文档中时，应始终将它们放置在 figure 环境或类似环境中，以便 LaTeX 适配图像和文字。<br>图片排版技巧：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31347869/article/details/103832190">图片的插入及排版方法</a>，</p>
 </blockquote>
 <hr>
 <h2 id="创建列表"><a href="#创建列表" class="headerlink" title="创建列表"></a>创建列表</h2><p>在 LaTeX 中创建列表非常简单。可以使用不同的环境来创建不同形式的列表。环境是我们文档中具有不同呈现形式的各个部分。它们以<code>\begin&#123;...&#125;</code> 命令开始，以<code>\end&#123;...&#125;</code>命令结束。</p>
-<p>&nbsp;<br>列表主要有两种类型，<strong>有序列表</strong>和<strong>无序列表</strong>。分别使用不同的环境。</p>
+<p>列表主要有两种类型，<strong>有序列表</strong>和<strong>无序列表</strong>。分别使用不同的环境。</p>
 <h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表是由 itemize 环境生成的。每个条目之前必须有 \item，如下所示。默认情况下，各个条目用黑点表示。条目中的文本可以是任何长度。</p>
 <pre class=" language-latex"><code class="language-latex"><span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">itemize</span><span class="token punctuation">}</span>
 <span class="token function selector">\item</span><span class="token punctuation">[</span>标签<span class="token punctuation">]</span> 条目内容
@@ -843,7 +843,7 @@ E=m
 </code></pre>
 <p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211212215015.png" alt="编译后的效果"></p>
 <blockquote>
-<p>重要说明：equation* 环境是由外部软件包提供的，请参阅 <a target="_blank" rel="noopener" href="https://www.overleaf.com/learn/Aligning_equations">amsmath文章</a>。<br><a target="_blank" rel="noopener" href="https://texfaq.org/FAQ-dolldoll">不鼓励</a> 使用 $$ $$，因为它会产生不一致的间距，而且可能不适用于某些数学软件包。<br>相关资料：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_17783559/article/details/88181836">Latex所有常用数学符号整理</a>，<a target="_blank" rel="noopener" href="https://www.latexlive.com/">在线LaTeX公式编辑器</a></p>
+<p>重要说明：equation* 环境是由外部软件包提供的，请参阅 <a target="_blank" rel="noopener" href="https://www.overleaf.com/learn/Aligning_equations">amsmath文章</a>。<br><a target="_blank" rel="noopener" href="https://texfaq.org/FAQ-dolldoll">不鼓励</a> 使用<code>$$ $$</code>，因为它会产生不一致的间距，而且可能不适用于某些数学软件包。<br>相关资料：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_17783559/article/details/88181836">Latex所有常用数学符号整理</a>，<a target="_blank" rel="noopener" href="https://www.latexlive.com/">在线LaTeX公式编辑器</a></p>
 </blockquote>
 <hr>
 <h2 id="基本框架"><a href="#基本框架" class="headerlink" title="基本框架"></a>基本框架</h2><h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>在科学文献中，通常会在摘要部分里面简述论文的主要内容。在 LaTeX 中有针对摘要部分设计的环境。摘要环境会将文本以特殊格式放在文档顶部。</p>
@@ -994,7 +994,7 @@ IEEE Systems Journal, vol. 12, no. 2, pp. 1263-1277, 2018.
 <p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211212232247.png" alt="编译后的效果"></p>
 <hr>
 <h2 id="添加算法伪代码"><a href="#添加算法伪代码" class="headerlink" title="添加算法伪代码"></a>添加算法伪代码</h2><p>在LaTeX中写伪代码也是需要导入外部宏包，常用的宏包有<code>algorithms</code>、<code>algorithmicx</code> 和 <code>algorithm2e</code>。</p>
-<p>&nbsp;<br><code>algorithms</code>和<code>algorithmicx</code>一般一起使用， 简易但可定制性不高。<code>algorithm2e</code>相对复杂些，但是操作性更高，可定制性更强，所以这里主要详细介绍<code>algorithm2e</code>的使用。</p>
+<p><code>algorithms</code>和<code>algorithmicx</code>一般一起使用， 简易但可定制性不高。<code>algorithm2e</code>相对复杂些，但是操作性更高，可定制性更强，所以这里主要详细介绍<code>algorithm2e</code>的使用。</p>
 <h3 id="algorithms和algorithmicx示例"><a href="#algorithms和algorithmicx示例" class="headerlink" title="algorithms和algorithmicx示例"></a>algorithms和algorithmicx示例</h3><pre class=" language-latex"><code class="language-latex"><span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">algorithm</span><span class="token punctuation">}</span>
   <span class="token function selector">\renewcommand</span><span class="token punctuation">{</span><span class="token function selector">\algorithmicrequire</span><span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\textbf</span><span class="token punctuation">{</span>Input:<span class="token punctuation">}</span><span class="token punctuation">}</span>
     <span class="token function selector">\renewcommand</span><span class="token punctuation">{</span><span class="token function selector">\algorithmicensure</span><span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\textbf</span><span class="token punctuation">{</span>Output:<span class="token punctuation">}</span><span class="token punctuation">}</span>
