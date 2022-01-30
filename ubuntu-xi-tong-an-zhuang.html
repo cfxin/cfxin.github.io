@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="PicGo配置图床, 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
-    <meta name="description" content="PicGo+Gitee搭建个人图床1. PicGo下载安装进入PicGo官方地址下载所需要的安装包。
-安装好后，在软件的插件设置里安装上传gitee所需要的插件，我这里使用的是gitee-smart 1.1.7。
+    <meta name="keywords" content="Ubuntu系统安装, 软件工程师 程不懂 cfixn 自动驾驶 强化学习">
+    <meta name="description" content="前言本安装教程包含在虚拟机上安装Ubuntu和在实机上安装Ubuntu，虚拟机使用的 VMware Workstation 16 pro，系统镜像是ubuntu-20.04。
 
-2. Gitee上创建存">
+Ubuntu官网：Ubuntu桌面系统
+
+虚拟机上安装创建虚拟">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>PicGo配置图床 | 程不懂の博客</title>
+    <title>Ubuntu系统安装 | 程不懂の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -324,12 +325,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2021/12/24/2aVbRGrFwugK6nv.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/74.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">PicGo配置图床</h1>
+                    <h1 class="description center-align post-title">Ubuntu系统安装</h1>
                 </div>
             </div>
         </div>
@@ -445,12 +446,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/PicGo/">
-                                <span class="chip bg-color">PicGo</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                                <span class="chip bg-color">图床</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
                     </div>
@@ -461,8 +458,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
-                                软件与工具
+                            <a href="/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" class="post-category">
+                                开发环境
                             </a>
                         
                     </div>
@@ -474,7 +471,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-24
+                    2022-01-30
                 </div>
                 
 
@@ -488,14 +485,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    468
+                    860
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -515,45 +512,65 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="PicGo-Gitee搭建个人图床"><a href="#PicGo-Gitee搭建个人图床" class="headerlink" title="PicGo+Gitee搭建个人图床"></a>PicGo+Gitee搭建个人图床</h2><h3 id="1-PicGo下载安装"><a href="#1-PicGo下载安装" class="headerlink" title="1. PicGo下载安装"></a>1. PicGo下载安装</h3><p>进入<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">PicGo官方地址</a>下载所需要的安装包。</p>
-<p>安装好后，在软件的插件设置里安装上传gitee所需要的插件，我这里使用的是<code>gitee-smart 1.1.7</code>。</p>
-<p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224135031.png"></p>
-<h3 id="2-Gitee上创建存放图片的仓库"><a href="#2-Gitee上创建存放图片的仓库" class="headerlink" title="2. Gitee上创建存放图片的仓库"></a>2. Gitee上创建存放图片的仓库</h3><ol>
-<li>打开<a target="_blank" rel="noopener" href="https://gitee.com/">Gitee官网</a>创建仓库，如果没注册的先自行注册账号，Gitee免费提供5G的存储空间。</li>
-</ol>
-<p>新建仓库时注意：</p>
-<ul>
-<li>设置为开源</li>
-<li>Readme文件初始化</li>
-</ul>
-<p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224140258.png"></p>
-<ol start="2">
-<li>创建私人令牌</li>
-</ol>
-<p><code>个人头像--&gt;设置--&gt;私人令牌--&gt;生成新令牌</code></p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本安装教程包含在虚拟机上安装Ubuntu和在实机上安装Ubuntu，虚拟机使用的 <font color=#f86b1d>VMware Workstation 16 pro</font>，系统镜像是<font color=#f86b1d>ubuntu-20.04</font>。</p>
 <blockquote>
-<p>注意: 令牌生成后只能看见一次, 记得复制粘贴保存下来, 关闭之后就看不到了.</p>
+<p>Ubuntu官网：<a target="_blank" rel="noopener" href="https://cn.ubuntu.com/download/desktop">Ubuntu桌面系统</a></p>
+</blockquote>
+<h2 id="虚拟机上安装"><a href="#虚拟机上安装" class="headerlink" title="虚拟机上安装"></a>虚拟机上安装</h2><h3 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h3><ol>
+<li><p>打开VMware，<font color=#f86b1d>文件–新建虚拟机</font>。配置选择典型，然后下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/5Dfxz8LQR46KXcn.png"></p>
+</li>
+<li><p>【安装客户机操作系统】窗口中，选择：稍后安装操作系统，然后下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/31JUIbAaYdS2qRw.png"></p>
+</li>
+<li><p>【选择客户机操作系统】窗口中，操作系统选择：Linux，版本选择：Ubuntu 64位，然后下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/peqf4JPygGxlva8.png"></p>
+</li>
+<li><p>【命名虚拟机】窗口中，虚拟机名称：为了便于区分不同的虚拟机，一般用系统镜像版本命名，例如：Ubuntu20.04。位置：选择用于存放虚拟机的目录，然后下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/kv3gtM1jpiwfOG6.png"></p>
+</li>
+<li><p>【指定磁盘容量】窗口中，大小根据需要自己分配，下面选择：建议将虚拟磁盘存储为单个文件，然后下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/QimMqFgk3VS7odr.png"></p>
+</li>
+<li><p>【已准备好创建虚拟机】窗口中，选择：完成。</p>
+</li>
+</ol>
+<h3 id="分配硬件资源"><a href="#分配硬件资源" class="headerlink" title="分配硬件资源"></a>分配硬件资源</h3><p>选中刚新建的虚拟机右键打开设置，【虚拟机设置】窗口中，根据自己的硬件条件，适当分配一些硬件资源。</p>
+<p>其中 <font color=#f86b1d>CD/DVD(STAT)</font>，在右侧 “连接” 板块内选择 “使用ISO镜像文件”，并指定已下载的Ubuntu镜像文件。</p>
+<p>分配好虚拟机的硬件资源后点击【确定】。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/wFbM2ljHeqNnaVS.png"></p>
+<h3 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h3><ol>
+<li><p>开启此虚拟机，加载完成后，左侧语言选择中文(简体)，然后选择安装Ubuntu。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/MlvFc2n8EaUskyt.png"></p>
+</li>
+<li><p>选择键盘布局，继续。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/Z45i7r1N6QH2gIY.png"></p>
+</li>
+</ol>
+<blockquote>
+<p>小技巧：如果窗口显示不全，按住Alt+F7，同时按下鼠标左键，然后拖动窗口。</p>
 </blockquote>
 <ol start="3">
-<li>私人令牌权限设置</li>
+<li><p>【更新和其他软件】窗口，取消 “安装Ubuntu时下载更新” 选项，点击继续。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/FEhWnklDzSOtePx.png"></p>
+</li>
+<li><p>【安装类型】窗口，“清楚整个磁盘并安装Ubuntu” 选项会自动分区，“其它选项” 可以自定义分区，我这里选择第一项，点击 “现在安装”，随后弹出【将改动写入此盘吗】窗口，选择 “继续”。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/Q4CI3uKJvpNbPqY.png"></p>
+</li>
+<li><p>时区选择 “Shang-hai”，然后点击 “继续”。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/sTxApz1vNZn3ec9.png"></p>
+</li>
+<li><p>填写账户名和密码，然后点击 “继续”。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/8aATnWeIiCDvGj2.png"></p>
+</li>
+<li><p>最后等待安装完成，点击虚拟机下面 “我已完成安装”，然后重启。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/qzs19nK36GpOQxv.png"></p>
+</li>
 </ol>
-<p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224141514.png"></p>
-<h3 id="3-配置PicGo"><a href="#3-配置PicGo" class="headerlink" title="3. 配置PicGo"></a>3. 配置PicGo</h3><ol>
-<li>进入PicGo软件, 选择图床设置, 找到gitee</li>
-<li>gitee配置如下:</li>
+<p>如果重启时提示移除镜像设备，则选中虚拟机右键进入设置，其中 <font color=#f86b1d>CD/DVD(STAT)</font>，在右侧 “连接” 板块内选择 “使用物理驱动器”，然后重启。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/QMasYG2g3BfuC74.png"></p>
+<h2 id="实机上安装"><a href="#实机上安装" class="headerlink" title="实机上安装"></a>实机上安装</h2><h3 id="制作U盘启动盘"><a href="#制作U盘启动盘" class="headerlink" title="制作U盘启动盘"></a>制作U盘启动盘</h3><blockquote>
+<p>准备工作：一个4G以上的U盘，下载好<a target="_blank" rel="noopener" href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17p.exe">Rufus</a>，下载好系统镜像。</p>
+</blockquote>
+<ol>
+<li><p>打开Rufus软件，U盘插入电脑，在Rufus中选择你的U盘设备。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/jiVEFxZylBC9tUM.png"></p>
+</li>
+<li><p>选择你之前下载的 Ubuntu ISO 文件，点击 “引导类型选择” 右边的 “选择”。找到你下载的镜像文件，点击打开。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/oRmhKeMSFD3sPiU.png"></p>
+</li>
+<li><p>其他参数默认即可，然后单击 “开始”。可能会收到警告，Rufus需要其他文件才能完成ISO的编写。如果出现此对话框，请选择是继续。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/MFu2J1ijBTfdcHY.png"></p>
+</li>
+<li><p>然后会提醒您Rufus已经检测到Ubuntu ISO是一个ISO混合映像。这意味着同一图像文件可以用作DVD和U盘的源，而无需转换。保持在ISO映像模式下写入的选中状态，然后单击确定继续。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/kWMxqon9KvJu3lI.png"></p>
+</li>
+<li><p>等待进度条完全变绿显示就绪即表示制作完成。</p>
+</li>
 </ol>
-<p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224143035.png"></p>
-<blockquote>
-<p>repo: 用户名/仓库名, 可以在刚创建的仓库里进行复制<br>branch: 分支, 创建仓库时选择了master单分支, 所以这里填master<br>token: 填刚在Gitee上创建的私人令牌<br>path: 图片在仓库中的存储路径，我这里存储在image下<br>customPath：默认即可<br>customURL: 默认即可</p>
-</blockquote>
-<h2 id="PicGo配置SM-MS公共图床"><a href="#PicGo配置SM-MS公共图床" class="headerlink" title="PicGo配置SM.MS公共图床"></a>PicGo配置SM.MS公共图床</h2><h3 id="1-获得SM-MS的密令Token"><a href="#1-获得SM-MS的密令Token" class="headerlink" title="1. 获得SM.MS的密令Token"></a>1. 获得SM.MS的密令Token</h3><p>SM.MS是一个老牌公共图床, 永久存储免注册，图片链接支持https，可以删除上传的图片，提供多种图片链接格式. 单张图片最大5M，每分钟最多上传10张, 有5G免费空间.</p>
-<p>进入<a target="_blank" rel="noopener" href="https://sm.ms/">SM.MS官网</a>注册账号, 点击<code>User--&gt;Login</code>注册登录，登录后点击相同的位置，进入Dashboard. 左侧菜单栏找到<code>API Token</code>, 创建Token.</p>
-<p><img src="/medias/suolong1.gif" data-original="https://gitee.com/chengbudong/noteimg/raw/master/image/20211224145857.png"></p>
-<h3 id="2-PicGo中配置"><a href="#2-PicGo中配置" class="headerlink" title="2. PicGo中配置"></a>2. PicGo中配置</h3><p>在PicGo中配置SM.MS非常简单, PicGO默认支持上传SM.MS图床, 不需要额外安装插件,  只需要填入密令Token即可.</p>
-<p><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2021/12/24/NehaJXuBEYivjsr.png"></p>
-<blockquote>
-<p>附：<a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/guide/">PicGo官方指南</a></p>
-</blockquote>
+<h3 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h3><p>推荐按照下表进行分区<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/APDqy3ZaMVfC64j.png"></p>
 
                 
             </div>
@@ -580,7 +597,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cfxin.github.io/picgo-pei-zhi-tu-chuang.html">https://cfxin.github.io/picgo-pei-zhi-tu-chuang.html</a>
+                    <a href="https://cfxin.github.io/ubuntu-xi-tong-an-zhuang.html">https://cfxin.github.io/ubuntu-xi-tong-an-zhuang.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -618,12 +635,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/PicGo/">
-                                    <span class="chip bg-color">PicGo</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                                    <span class="chip bg-color">图床</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
                                 </a>
                             
                         </div>
@@ -795,16 +808,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/markdown-yu-fa.html">
+                <a href="/ubuntu-xi-tong-an-zhuang.html">
                     <div class="card-image">
                         
-                        <img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2021/12/24/wUF2AJ4iYRTBkKO.png" class="responsive-img" alt="markdown语法">
                         
-                        <span class="card-title">markdown语法</span>
+                        <img src="/medias/suolong1.gif" data-original="/medias/featureimages/74.png" class="responsive-img" alt="Ubuntu系统安装">
+                        
+                        <span class="card-title">Ubuntu系统安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,26 +829,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    软件与工具
+                            <a href="/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" class="post-category">
+                                    开发环境
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>
@@ -847,12 +863,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/hexo-guan-li-wen-zhang-de-ji-ben-cao-zuo.html">
+                <a href="/hexo-da-jian-bo-ke-xiang-jie.html">
                     <div class="card-image">
                         
-                        <img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2021/12/24/cjkDPvw9lE1ZTuG.png" class="responsive-img" alt="Hexo管理文章的基本操作">
+                        <img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2021/12/24/cwnsS7r42JyMQId.png" class="responsive-img" alt="Hexo搭建博客详解">
                         
-                        <span class="card-title">Hexo管理文章的基本操作</span>
+                        <span class="card-title">Hexo搭建博客详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -863,7 +879,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
                             </span>
                         <span class="publish-author">
                             
@@ -882,6 +898,10 @@
                     
                     <a href="/tags/Hexo/">
                         <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Matery/">
+                        <span class="chip bg-color">Matery</span>
                     </a>
                     
                 </div>
