@@ -2,7 +2,7 @@
 title: Hexo管理文章的基本操作
 date: 2021-12-20 11:06:18
 update: 
-img: 
+img: https://s2.loli.net/2021/12/24/cjkDPvw9lE1ZTuG.png
 top: true
 cover: true
 coverImg: /medias/coverImg/coverImg4.jpg

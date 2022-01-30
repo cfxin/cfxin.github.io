@@ -7,10 +7,10 @@ toc: true
 mathjax: true
 date: 2021-12-28 13:37:50
 update: 
-img: https://s2.loli.net/2021/12/24/wUF2AJ4iYRTBkKO.png
+img: https://s2.loli.net/2021/12/24/qy6eWLDFU9aTBE8.png
 password: 
 summary: 
-categories: 软件与工具
+categories: 博客建设
 tags: 
 - vscode
 - Hexo
