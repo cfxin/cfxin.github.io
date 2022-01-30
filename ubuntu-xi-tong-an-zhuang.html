@@ -485,14 +485,14 @@ Ubuntu官网：Ubuntu桌面系统
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    860
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -555,7 +555,7 @@ Ubuntu官网：Ubuntu桌面系统
 </li>
 </ol>
 <p>如果重启时提示移除镜像设备，则选中虚拟机右键进入设置，其中 <font color=#f86b1d>CD/DVD(STAT)</font>，在右侧 “连接” 板块内选择 “使用物理驱动器”，然后重启。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/QMasYG2g3BfuC74.png"></p>
-<h2 id="实机上安装"><a href="#实机上安装" class="headerlink" title="实机上安装"></a>实机上安装</h2><h3 id="制作U盘启动盘"><a href="#制作U盘启动盘" class="headerlink" title="制作U盘启动盘"></a>制作U盘启动盘</h3><blockquote>
+<h2 id="实机上安装-单系统"><a href="#实机上安装-单系统" class="headerlink" title="实机上安装(单系统)"></a>实机上安装(单系统)</h2><h3 id="制作U盘启动盘"><a href="#制作U盘启动盘" class="headerlink" title="制作U盘启动盘"></a>制作U盘启动盘</h3><blockquote>
 <p>准备工作：一个4G以上的U盘，下载好<a target="_blank" rel="noopener" href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17p.exe">Rufus</a>，下载好系统镜像。</p>
 </blockquote>
 <ol>
@@ -570,7 +570,38 @@ Ubuntu官网：Ubuntu桌面系统
 <li><p>等待进度条完全变绿显示就绪即表示制作完成。</p>
 </li>
 </ol>
-<h3 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h3><p>推荐按照下表进行分区<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/APDqy3ZaMVfC64j.png"></p>
+<h3 id="启动安装引导"><a href="#启动安装引导" class="headerlink" title="启动安装引导"></a>启动安装引导</h3><p>我的主机是Dell的OptiPlex 5070，该电脑默认SATA使用的RAID模式，需要改为ACHI模式。其它主机更能不需要这一步操作。</p>
+<ol>
+<li><p>将刻录好Ubuntu系统的u盘插入主机，重启电脑，然后一直按F2，直到出现BIOS界面，点击 “System Configuration” 左边的加号将其展开后，点击 “SATA Operation”，选为 “ACHI” 模式，然后按 “Esc” 保存退出。注意退出后要一直按F12，进入下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/YMucLCjKkrbsRpo.png"></p>
+</li>
+<li><p>退出后上述界面后一直按F12，直到出现以下界面，选择之前刻录好的U盘的名字：UEFI:KingstonDataTraveler 3.0PMAP（u盘不一样可能名字不一样），回车。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/XaLrh5UbAndqvPZ.png"></p>
+</li>
+<li><p>按下方向键选择Install Ubuntu（不要按回车），按e，进入下一步。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/3zwBFbNStmlPLIc.png"></p>
+</li>
+<li><p>把第二行最后<code>quiet splash</code>后面的<code>- - -</code>改成<code>nomodeset</code>，然后按F10，进入Ubuntu安装界面。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/gr4Ade8bhIQNMaw.png"></p>
+</li>
+</ol>
+<h3 id="开始安装-1"><a href="#开始安装-1" class="headerlink" title="开始安装"></a>开始安装</h3><ol>
+<li><p>进入Ubuntu安装界面后，选择 “中文（简体）”，点击 “继续”。</p>
+</li>
+<li><p>键盘布局自动选择了汉语，点击 “继续”。</p>
+</li>
+<li><p>选择正常安装，取消勾选 “安装Ubuntu时下载更新”，点击“继续”。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/FEhWnklDzSOtePx.png"></p>
+</li>
+<li><p>安装类型选择 “其他选项”，因为我们要安装单系统，所以要将Windows给覆盖掉，点击 “继续”。</p>
+</li>
+<li><p>手动分区<br>将所有被占用的分区删除，然后推荐按照下表进行分区。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/APDqy3ZaMVfC64j.png"></p>
+</li>
+<li><p>时区选择 “Shang-hai”，然后点击 “继续”。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/sTxApz1vNZn3ec9.png"></p>
+</li>
+<li><p>填写账户名和密码，然后点击 “继续”。</p>
+</li>
+<li><p>最后等待安装完成，然后重启。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/qzs19nK36GpOQxv.png"></p>
+</li>
+</ol>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>如果安装完成后重启时一直卡屏，可能是显卡驱动问题。<br><strong>解决方法</strong>：<br>重启电脑，一直按F12，直到出现以下界面：<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/Zq2hJ6MQNy5BYe4.png"></p>
+<p>选择Ubuntu，按回车，然后马上按 “esc” ，直接按<code>e</code>，出现以下界面，然后在倒数第二行<code>splash $vt_handoff</code>后加上<code>acpi_osi=linux nomodeset</code>，再按F10即可进入用户登陆界面，输入密码进入Ubuntu。<br><img src="/medias/suolong1.gif" data-original="https://s2.loli.net/2022/01/30/SCnKx2u4tJz871W.png"></p>
+<p>最后一步：更换显卡驱动，进入 “应用程序“（Application），点击 “软件与更新”（Software&amp;Update），选择 “附加驱动”（Additional Drives），选择Nvidia-drive-435(专有)，点击 “应用更改”，更改完成后重启即可。</p>
 
                 
             </div>
@@ -1095,7 +1126,7 @@ Ubuntu官网：Ubuntu桌面系统
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">32.7k</span>
+                        class="white-color">33.2k</span>
             
             
             
