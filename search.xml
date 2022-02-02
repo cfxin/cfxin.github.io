@@ -4,6 +4,85 @@
   
     
     <entry>
+      <title>Linux上使用Clash</title>
+      <link href="/linux-shang-shi-yong-clash.html"/>
+      <url>/linux-shang-shi-yong-clash.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装clash-for-linux"><a href="#安装clash-for-linux" class="headerlink" title="安装clash for linux"></a>安装clash for linux</h2><ol><li><p>下载地址：<a href="https://github.com/Dreamacro/clash/releases">clash</a>，找到所需要的版本，我这里用的V1.9 64位。<br><img src="https://s2.loli.net/2022/02/02/PbaWlmRLf5pdrQS.png"></p></li><li><p>进入到你下载的安装文件所在目录，输入下面命令进行解压：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">gzip</span> -f clash-linux-amd64-v1.9.0.gz -d</code></pre></li><li><p>授予可执行权限</p><pre class=" language-bash"><code class="language-bash"><span class="token function">chmod</span> +x clash-linux-amd64-v1.9.0</code></pre></li><li><p>执行初始化clash</p><pre class=" language-bash"><code class="language-bash">./clash-linux-amd64-v1.9.0</code></pre><blockquote><p>注意：文件名要对应你下载的版本，为了方便也可以先把下载的文件重命名为clash。</p></blockquote></li></ol><p>初始化后默认会在<code>~/.config/clash/</code>目录下生成配置文件。</p><p><img src="https://s2.loli.net/2022/02/02/2ENFJ4TXjh9rMka.png"></p><ol start="5"><li>配置代理文件<br>clash 使用 yaml 作为配置文件，由于我使用的代理只提供url的订阅地址，所以我是通过将win 10上设置好的clash的配置文件导出来，然后替换Linux中的clash配置文件，具体操作如下：</li></ol><p>代开win 10上的clash，找到代理文件，右键在资源管理器中打开，然后复制一份到Linux系统中。<br><img src="https://s2.loli.net/2022/02/02/UgWblZt7YXvRzOV.png"></p><p>在Linux系统中找到刚复制的文件，执行以下命令替换默认的配置文件。</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cat</span> 1639637240159.yml <span class="token operator">></span> ~/.config/clash/config.yaml</code></pre><p><img src="https://s2.loli.net/2022/02/02/aIjsJfW5rUkdwSR.png"></p><ol start="6"><li><p>重新执行<code>./clash-linux-amd64-v1.9.0</code>，开启clash。</p><blockquote><p>注意:需要进入到你的clash软件所在目录才能执行，以后每次使用都在这里开启，根据你自己的设置不同，开启方式也所有不同。</p></blockquote></li><li><p>设置网络代理，我这里已Ubuntu为例。<br><img src="https://s2.loli.net/2022/02/02/LSXgQAOx52PI1ns.png"></p></li></ol><p>设置完成后，打开浏览器，访问<code>youtube.com</code>检查是否成功。</p><blockquote><p>开启代理后，访问 <a href="http://clash.razord.top/#/proxies">http://clash.razord.top/#/proxies</a> 可进入web管理工具。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件与工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu虚拟机与主机共享文件夹</title>
+      <link href="/ubuntu-xu-ni-ji-yu-zhu-ji-gong-xiang-wen-jian-jia.html"/>
+      <url>/ubuntu-xu-ni-ji-yu-zhu-ji-gong-xiang-wen-jian-jia.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="VMware-中的设置"><a href="#VMware-中的设置" class="headerlink" title="VMware 中的设置"></a>VMware 中的设置</h2><ol><li><p>选中虚拟机 <font color=#f86b1d>“右键 &gt; 设置 &gt; 选项”</font> 找到共享文件夹。<br><img src="https://s2.loli.net/2022/02/02/u2y1C4TjrhSLeVN.png"></p></li><li><p>选择 <font color=#f86b1d>“总是启用 &gt; 添加”</font>，根据向导设置要共享的目录，最后点击 “确定” 退出设置。<br><img src="https://s2.loli.net/2022/02/02/r54XvDlVbt6kuZy.png"></p></li><li><p>开启虚拟机进入 <font color=#f86b1d>mnt目录</font> 查看，若没有，按照以下命令操作：</p><pre class=" language-bash"><code class="language-bash">vmware-hgfsclient <span class="token function">sudo</span> vmhgfs-fuse .host:/ /mnt -o nonempty -o allow_other</code></pre><p><img src="https://s2.loli.net/2022/02/02/VREk9Fc4T75oYKJ.png"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件与工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> VMware </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VNC远程连接Ubuntu</title>
+      <link href="/vnc-yuan-cheng-lian-jie-ubuntu.html"/>
+      <url>/vnc-yuan-cheng-lian-jie-ubuntu.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>场景是这样的，有一台主机安装的 Ubuntu 系统并配置了开发环境，通过 VNC 实现在另外的 win 10 电脑上远程连接桌面，把它当作带桌面的服务器使用。</p><h2 id="Ubuntu系统上配置VNC"><a href="#Ubuntu系统上配置VNC" class="headerlink" title="Ubuntu系统上配置VNC"></a>Ubuntu系统上配置VNC</h2><ol><li><p>打开终端输入：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> xrdp vnc4server tightvncserver xbase-clients dconf-editor</code></pre><p><img src="https://s2.loli.net/2022/01/31/LTzCRAQsko8dK3E.png"></p></li><li><p>打开dconf-editor修改设置，在终端输入：<code>dconf-editor</code>，进入如下界面：</p></li></ol><p><img src="https://s2.loli.net/2022/01/31/vtXnoCc1zBdiN4J.png"><br>接着按照<code>org &gt; gnome &gt; desktop &gt; remote-access</code>访问路径找到<code>prompt-enabled</code>和<code>require-encryption</code>并关掉。<br><img src="https://s2.loli.net/2022/01/31/xA4jiGgobOXLBsD.png"></p><ol start="3"><li>打开 <font color=#f86b1d>设置 &gt; 共享 &gt; 屏幕共享</font>。<br><img src="https://s2.loli.net/2022/01/31/YkhGzZtCyfWKPN8.png"></li></ol><h2 id="Win-10-配置-VNC-Viewer"><a href="#Win-10-配置-VNC-Viewer" class="headerlink" title="Win 10 配置 VNC Viewer"></a>Win 10 配置 VNC Viewer</h2><ol><li><p>下载并安装<a href="https://www.realvnc.com/en/connect/download/viewer/windows/">VNC Viewer</a>，EXE是安装版，Standalone是免安装版。<br><img src="https://s2.loli.net/2022/01/31/f9P8sonwBY4Z6Ky.png"></p></li><li><p>输入Ubuntu电脑的ip地址即可远程连接。<br><img src="https://s2.loli.net/2022/01/31/8WmAkDMjNsrJSun.png"></p></li></ol><h2 id="去掉显示器后远程连接黑屏问题"><a href="#去掉显示器后远程连接黑屏问题" class="headerlink" title="去掉显示器后远程连接黑屏问题"></a>去掉显示器后远程连接黑屏问题</h2><p>去掉 Ubuntu 系统的电脑显示器后，VNC 可以连接，但是黑屏。这是因为拆除显示器之后，显卡没有任何的输出，也就没有桌面了。</p><p><strong>解决方法</strong>：通过软件虚拟一个显示器。</p><ol><li><p>安装虚拟显示器，Ubuntu 18.04，终端输入命令：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span>  xserver-xorg-core-hwe-18.04<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span>  xserver-xorg-video-dummy-hwe-18.04  --fix-missing</code></pre></li><li><p>创建配置文件</p><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">vi</span> /usr/share/X11/xorg.conf.d/xorg.conf</code></pre><p>写入以下内容，这里设置的分辨率是1920*1080。</p><pre class=" language-bash"><code class="language-bash">Section <span class="token string">"Monitor"</span>Identifier <span class="token string">"Monitor0"</span>HorizSync 28.0-80.0VertRefresh 48.0-75.0<span class="token comment" spellcheck="true"># https://arachnoid.com/modelines/</span><span class="token comment" spellcheck="true"># 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz</span>Modeline <span class="token string">"1920x1080_60.00"</span> 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +VsyncEndSectionSection <span class="token string">"Device"</span>Identifier <span class="token string">"Card0"</span>Driver <span class="token string">"dummy"</span>VideoRam 256000EndSectionSection <span class="token string">"Screen"</span>DefaultDepth 24Identifier <span class="token string">"Screen0"</span>Device <span class="token string">"Card0"</span>Monitor <span class="token string">"Monitor0"</span>SubSection <span class="token string">"Display"</span> Depth 24 Modes <span class="token string">"1920x1080_60.00"</span>EndSubSectionEndSection</code></pre><p>保存退出，然后重启主机即可。</p></li></ol><blockquote><p>注意：当想重新装上显示器时，需要关掉虚拟显示器，方法是直接删掉上面创建的配置文件或给配置文件重命名个其它名字，等需要的时候再把名字改回来。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发环境 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> VNC </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu系统安装</title>
       <link href="/ubuntu-xi-tong-an-zhuang.html"/>
       <url>/ubuntu-xi-tong-an-zhuang.html</url>
@@ -225,7 +304,7 @@
       
       <categories>
           
-          <category> 软件与工具 </category>
+          <category> 开发环境 </category>
           
       </categories>
       
